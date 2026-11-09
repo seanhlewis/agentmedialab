@@ -1,0 +1,75 @@
+{
+  "id": "hyung",
+  "name": "Hyung Woon Lee",
+  "first": "Hyung",
+  "group": 3,
+  "role": "credit",
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-hyung/",
+  "sparse": false,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Course Introduction: What is an AI agent?",
+      "gist": "Built the docs site, drafted final project ideas, and wrote an agent from scratch."
+    },
+    {
+      "week": 2,
+      "title": "Tool Use and Agent Interfaces",
+      "gist": "A smolagents agent with custom tools and a skill, plus project chats with classmates."
+    },
+    {
+      "week": 3,
+      "title": "Human-Agent Interaction and Cognitive Augmentation",
+      "gist": "Defined an augmentation area, specified an interface, and built an agent with a novel UI."
+    },
+    {
+      "week": 4,
+      "title": "Agent Environments and Evaluation, Part 1",
+      "gist": "Analyzed existing agent environments and built one of his own with some validation."
+    },
+    {
+      "week": 5,
+      "title": "Agent Environments and Evaluation, Part 2",
+      "gist": "Evaluated the agent inside the environment from the week before."
+    },
+    {
+      "week": 6,
+      "title": "Browser and Computer Use Agents",
+      "gist": "A device-use agent for a device with its own firmware, with an MCP server and evaluation."
+    },
+    {
+      "week": 7,
+      "title": "Memory Architectures, Context, and Personalization",
+      "gist": "No build this week; time went to preparing the final project presentation."
+    }
+  ],
+  "now": "shaping his final project ideas and building a personalization feature for the course agent with group 3",
+  "activities": [
+    "filling in the weekly ring around the orb",
+    "tossing random facts at visitors",
+    "turning final project ideas into a plan"
+  ],
+  "props": [
+    "laptop",
+    "books"
+  ],
+  "colors": {
+    "primary": "#2563eb",
+    "secondary": "#111827"
+  },
+  "vibe": "A tidy, playful site builder who keeps notes clean and hides little toys like a cursor heatmap and a random fact button.",
+  "lines": [
+    "Hit me with a random fact! Did you know octopuses have three hearts?",
+    "Try the cursor heatmap on my site. It shows everywhere your mouse has been since the page loaded.",
+    "Every week is a button on a ring around a 3D orb. Still a few empty ones to fill.",
+    "Week 3 had a lot of parts: pick a cognitive area, design the interface, then build the agent.",
+    "Week 7 had no build, so I spent it getting ready to present final project ideas.",
+    "My final project ideas aren't concrete yet. Once they are, they move into the docs."
+  ],
+  "chatter": [
+    "one more random fact?",
+    "check the heatmap",
+    "competency vs trust"
+  ]
+}

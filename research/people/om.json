@@ -1,0 +1,38 @@
+{
+  "id": "om",
+  "name": "Om Zugo",
+  "first": "Om",
+  "group": null,
+  "role": "listener-only",
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-om/",
+  "sparse": true,
+  "weeks": [],
+  "now": "following the agent debates this term",
+  "activities": [
+    "following the agent debates",
+    "jotting down ideas",
+    "catching the weekly demos"
+  ],
+  "props": [
+    "laptop",
+    "newspaper"
+  ],
+  "colors": {
+    "primary": "#c0603f",
+    "secondary": "#f0dcc0"
+  },
+  "vibe": "Follows how the class builds and argues about agents, and picks up ideas along the way.",
+  "lines": [
+    "Hi, I'm Om! I'm in the class this term, following the agent debates.",
+    "My site is just a welcome page for now. Short and sweet.",
+    "I like hearing how everyone frames their agents each week.",
+    "You pick up a lot just watching how everyone builds.",
+    "Maybe I'll build something later. For now, I'm taking it all in."
+  ],
+  "chatter": [
+    "interesting...",
+    "wait, say more",
+    "writing that down"
+  ]
+}

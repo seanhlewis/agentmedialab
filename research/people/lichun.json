@@ -1,0 +1,38 @@
+{
+  "id": "lichun",
+  "name": "Li-Chun Lu",
+  "first": "Li-Chun",
+  "group": null,
+  "role": "listener-only",
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-li-chun/",
+  "sparse": true,
+  "weeks": [],
+  "now": "following the agent debates this term",
+  "activities": [
+    "following the agent debates",
+    "taking notes on agent ideas",
+    "reading along with the class"
+  ],
+  "props": [
+    "laptop",
+    "mug"
+  ],
+  "colors": {
+    "primary": "#5b7fa6",
+    "secondary": "#e8e4da"
+  },
+  "vibe": "Follows how the class builds and argues about agents, and picks up ideas along the way.",
+  "lines": [
+    "Hi, I'm Li-Chun! I'm in the class this term, following the agent debates.",
+    "Every week someone shows an agent I didn't expect. It's a fun room to be in.",
+    "My class site is still just a welcome page, so I'm keeping things simple.",
+    "I like hearing how people grade their agents, and what fails along the way.",
+    "No group for me this week. I'm happy to wander between tables and listen."
+  ],
+  "chatter": [
+    "which group is presenting?",
+    "ooh, how did they grade that?",
+    "taking notes"
+  ]
+}

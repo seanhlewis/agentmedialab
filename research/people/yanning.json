@@ -1,0 +1,62 @@
+{
+  "id": "yanning",
+  "name": "Yanning Hou",
+  "first": "Yanning",
+  "group": 2,
+  "role": "credit",
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-yanning/",
+  "sparse": false,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Implement an agent from scratch",
+      "gist": "A local Qwen2.5 agent that tunes a room's climate to whoever is there, keeping energy low."
+    },
+    {
+      "week": 2,
+      "title": "Recitation TA agent",
+      "gist": "A TA agent that traces questions to root concepts and writes a weekly recitation brief."
+    },
+    {
+      "week": 3,
+      "title": "Librarian",
+      "gist": "An agent that files and names downloads; Claude placed 8 of 8, a local model 5 of 8."
+    },
+    {
+      "week": 4,
+      "title": "FireBench",
+      "gist": "A house-fire benchmark where an LLM is the brain of a rescue robot."
+    }
+  ],
+  "now": "building a personalization feature for the course agent with group 2",
+  "activities": [
+    "setting a sofa fire in a simulated ranch house",
+    "tracing student questions back to root concepts",
+    "filing downloads into the right folder"
+  ],
+  "props": [
+    "laptop",
+    "robot",
+    "books"
+  ],
+  "colors": {
+    "primary": "#ff3b1f",
+    "secondary": "#111111"
+  },
+  "vibe": "A careful, research-grounded builder who calibrates simulations against real measurements and asks what humans should keep.",
+  "lines": [
+    "FireBench puts an LLM in a rescue robot's head, in a burning house modeled on a real 2017 fire test.",
+    "The model kept inventing actions my world didn't support. Every time, it taught me something about my own environment.",
+    "None of the robot's 58 'I cannot reach' claims were false. 55 true, 3 defensible.",
+    "My librarian agent: Claude filed 8 of 8 downloads. The local model got 5 of 8, same as a simple lexical guess.",
+    "I want a workspace agent to be invisible, not a cute cartoon calling for attention.",
+    "The TA agent handles scale and memory. Humans keep judgment and decide what to teach next.",
+    "First time with a local model in week 1. It fills in nothing for you."
+  ],
+  "chatter": [
+    "too many tabs open again",
+    "is the robot protecting itself?",
+    "check it against reality"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "olivia",
+  "name": "Olivia Seow",
+  "first": "Olivia",
+  "group": 5,
+  "role": "listener",
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-olivia/",
+  "sparse": false,
+  "weeks": [],
+  "now": "growing tangerine, an ambient research companion for language learners",
+  "activities": [
+    "noticing what someone is working on and researching around it",
+    "explaining findings in a target language",
+    "sketching playful agents that choose when to talk"
+  ],
+  "props": [
+    "laptop",
+    "plant"
+  ],
+  "colors": {
+    "primary": "#f06a1c",
+    "secondary": "#3b1d45"
+  },
+  "vibe": "A warm, visual builder whose site is a painted desk with a tangerine, books and plants, where the agent's demo plays on the screen.",
+  "lines": [
+    "Meet Tangerine! It follows what you're working on and explains useful findings in the language you're learning.",
+    "The idea is simple: new words stick better when they're tied to stuff you already care about.",
+    "Tangerine runs a loop: observe, gate, judge, act, send, with feedback looping back in.",
+    "Noticing, growing, surprising. That's what I want an ambient companion to feel like.",
+    "Another idea was Sift, for anyone drowning in newsletters, papers and saved links.",
+    "And Pip! A playful agent with its own memory that can decide when to talk or stay quiet.",
+    "This week I'm with Group 5, building personalization for the Course Agent."
+  ],
+  "chatter": [
+    "tangerine noticed something",
+    "now say it in my target language",
+    "Pip is choosing to stay quiet"
+  ]
+}

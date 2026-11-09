@@ -1,0 +1,84 @@
+{
+  "id": "brooke",
+  "name": "Brooke Smilen",
+  "first": "Brooke",
+  "group": 5,
+  "role": "credit",
+  "dept": "first-year MAS student",
+  "site": "https://mitmedialab.github.io/agents2026-brooke/",
+  "sparse": false,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Patron",
+      "gist": "An artist agent paints portraits on request while a patron program accepts or rejects.",
+      "url": "https://mitmedialab.github.io/agents2026-brooke/week01/"
+    },
+    {
+      "week": 2,
+      "title": "Perci",
+      "gist": "An agent that links vision-science questions to a 3D model of the brain and eyes.",
+      "url": "https://mitmedialab.github.io/agents2026-brooke/week02/"
+    },
+    {
+      "week": 3,
+      "title": "Ambient search and study agent",
+      "gist": "A search-and-notebook study tool with an animated hippo helper inspired by Clippy.",
+      "url": "https://mitmedialab.github.io/agents2026-brooke/week03/"
+    },
+    {
+      "week": 4,
+      "title": "_moral_agents: the town",
+      "gist": "50 agents vote on trolley-style dilemmas, compare choices, and debate in a forum.",
+      "url": "https://mitmedialab.github.io/agents2026-brooke/week04/"
+    },
+    {
+      "week": 5,
+      "title": "Evaluation",
+      "gist": "An analysis tool checking whether the town's agents learn to coordinate and win.",
+      "url": "https://mitmedialab.github.io/agents2026-brooke/week05/"
+    },
+    {
+      "week": 6,
+      "title": "Howler",
+      "gist": "A phone agent that roasts her when she spends too long on social media.",
+      "url": "https://mitmedialab.github.io/agents2026-brooke/week06/"
+    },
+    {
+      "week": 7,
+      "title": "Associative Multi-Agent Network Design for Creativity",
+      "gist": "Final project proposal with David on an associative multi-agent network for creativity.",
+      "url": "https://mitmedialab.github.io/agents2026-brooke/week07/"
+    }
+  ],
+  "now": "working with david on an associative multi-agent network for creativity",
+  "activities": [
+    "reading town agents' debate logs",
+    "tuning howler's roasts",
+    "thinking about analogy-making"
+  ],
+  "props": [
+    "laptop",
+    "books",
+    "phone"
+  ],
+  "colors": {
+    "primary": "#161616",
+    "secondary": "#ffffff"
+  },
+  "vibe": "A curious, candid researcher of cognition and computation who builds playful experiments and is honest about what did and did not work.",
+  "lines": [
+    "hi, i'm brooke. I work on problems in cognition x computation.",
+    "In my town, 50 agents vote on trolley problems. A full tie saves everyone, but they haven't figured that out yet.",
+    "Ten rounds, ten zeros. Then I read the logs: they had considered a split vote and argued against it.",
+    "Howler buzzes me after ten minutes on Instagram, then roasts me. The humor still needs work.",
+    "My study tool has a little hippo that wanders the screen, like the original Clippy.",
+    "I love the 3D brain in Perci, but candidly it hasn't helped me learn the material yet.",
+    "Current reading list: Society of Mind, A Wild Sheep Chase, and The Subtlety of Sameness."
+  ],
+  "chatter": [
+    "split the vote? no, wait",
+    "the hippo is watching",
+    "analogies everywhere"
+  ]
+}

@@ -4,10 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Agent Studio</title>
+<meta name="description" content="Every MAS.S60 classmate in one pixel room: click anyone to hear what they built, follow their builds, and find related work across the class.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="pages.css">
 </head>
 <body>
 <div id="stage">
@@ -17,6 +19,11 @@
 
 <header id="hud">
   <div class="title">COGNITIVE AGENTS <span>· STUDIO</span></div>
+  <nav class="tabs" aria-label="Sections">
+    <button data-tab="studio" class="on">STUDIO</button>
+    <button data-tab="why">WHY</button>
+    <button data-tab="stats">STATS</button>
+  </nav>
   <div class="clock" id="clock">SUN NOV 8 · 2:30 PM</div>
   <div class="controls">
     <button id="pause" title="Pause (P)">II</button>
@@ -39,15 +46,30 @@
   </div>
   <div class="row"><b>NOW</b><span id="p-now"></span></div>
   <div class="row"><b>VIBE</b><span id="p-vibe"></span></div>
+  <div id="p-themes" class="chips"></div>
   <h3>BUILDS</h3>
-  <ul id="p-weeks"></ul>
+  <ul id="p-weeks" class="weeks"></ul>
+  <div id="p-pairs-box" hidden>
+    <h3>PAIRED BY THE GARDEN AGENT</h3>
+    <ul id="p-pairs" class="pairs"></ul>
+  </div>
+  <div id="p-rel-box" hidden>
+    <h3>RELATED, OTHER TABLES</h3>
+    <ul id="p-rel" class="rel"></ul>
+  </div>
   <h3>MEMORY STREAM</h3>
   <ul id="p-mem" class="mem"></ul>
   <a id="p-site" target="_blank" rel="noopener">VISIT SITE ↗</a>
 </aside>
 
+<main id="page-why" class="page" hidden></main>
+<main id="page-stats" class="page" hidden></main>
+
+<script src="data/config.js"></script>
+<script src="track.js"></script>
 <script src="data/people.js"></script>
 <script src="data/extra.js"></script>
 <script src="game.js"></script>
+<script src="pages.js"></script>
 </body>
 </html>

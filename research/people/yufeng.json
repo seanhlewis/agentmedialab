@@ -1,0 +1,37 @@
+{
+  "id": "yufeng",
+  "name": "Yufeng Zhao",
+  "first": "Yufeng",
+  "group": null,
+  "role": "listener-only",
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-yufeng/",
+  "sparse": true,
+  "weeks": [],
+  "now": "following the agent debates this term",
+  "activities": [
+    "following the agent debates",
+    "taking notes on agent ideas",
+    "checking out classmates' builds"
+  ],
+  "props": [
+    "laptop"
+  ],
+  "colors": {
+    "primary": "#5b7db1",
+    "secondary": "#e8edf5"
+  },
+  "vibe": "Follows how the class builds and argues about agents, and picks up ideas along the way.",
+  "lines": [
+    "Hi, I'm Yufeng! I'm in the class this term, following the agent debates.",
+    "My site just says welcome for now. The real action is in everyone else's builds.",
+    "It's fun hearing all the agent debates from the back row.",
+    "Every week someone builds something I didn't expect.",
+    "I'm here to learn how people think about agents for cognitive augmentation."
+  ],
+  "chatter": [
+    "which week is this again?",
+    "interesting point",
+    "taking notes"
+  ]
+}

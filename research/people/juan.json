@@ -1,0 +1,77 @@
+{
+  "id": "juan",
+  "name": "Juan Ruben Gomez",
+  "first": "Juan Ruben",
+  "group": 2,
+  "role": "credit",
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-juan-ruben/",
+  "sparse": false,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Cognitive Load Support Agent",
+      "gist": "A local Qwen loop that reads six workload signals and picks one support action.",
+      "url": "https://mitmedialab.github.io/agents2026-juan-ruben/week-01/"
+    },
+    {
+      "week": 2,
+      "title": "Original Copy",
+      "gist": "A counterfactual self agent that changes one decision dimension and shows the fork.",
+      "url": "https://mitmedialab.github.io/agents2026-juan-ruben/week-02/"
+    },
+    {
+      "week": 3,
+      "title": "Memory Is Access (Mia)",
+      "gist": "A spatial memory agent that gives progressive cues instead of the answer.",
+      "url": "https://mitmedialab.github.io/agents2026-juan-ruben/week-03/"
+    },
+    {
+      "week": 4,
+      "title": "10bit: Catching loops before they become habits",
+      "gist": "A simulated day where a furry companion tries to catch app loops while they are a choice.",
+      "url": "https://mitmedialab.github.io/agents2026-juan-ruben/week-04/"
+    },
+    {
+      "week": 5,
+      "title": "10bit: Testing agents",
+      "gist": "72 runs: the rules agent passed half the tasks, Qwen3 8B passed none.",
+      "url": "https://mitmedialab.github.io/agents2026-juan-ruben/week-05/"
+    },
+    {
+      "week": 6,
+      "title": "Sol lamba: An earthquake light",
+      "gist": "With Egemen, an agent drives a Hue lamp to turn live earthquake data into light.",
+      "url": "https://mitmedialab.github.io/agents2026-juan-ruben/week-06/"
+    }
+  ],
+  "now": "building lemmespiralforyou with egemen and a personalization feature for the course agent with group 2",
+  "activities": [
+    "tuning progressive memory cues",
+    "reading back a hue lamp after every command",
+    "counting how often 10bit lands in the drawer"
+  ],
+  "props": [
+    "laptop",
+    "phone"
+  ],
+  "colors": {
+    "primary": "#e8e4dc",
+    "secondary": "#784e30"
+  },
+  "vibe": "A research-first builder who pairs cognitive science papers with scrappy local-model prototypes and writes honestly about where they fail.",
+  "lines": [
+    "Conscious thought runs at about 10 bits a second. 10bit is my little furry guard for those bits.",
+    "I ran 10bit 72 times. The rules agent passed half the tasks. Qwen passed none and got put in a drawer every single day.",
+    "First two hours, Qwen looked great. Then it nagged its way into the drawer. One demo would have hidden all of that.",
+    "Egemen and I hooked an agent up to a Hue lamp. The bridge said red, amber, green worked. The lamp had no power.",
+    "Through smolagents, Qwen gave empty replies on up to 7 of 10 steps. A short loop straight against Ollama had none.",
+    "Mia gives you cues, not answers. You have to do the remembering yourself.",
+    "Final project is LemmeSpiralForYou with Egemen. Repetitive thought helps when it gets concrete, and hurts when it stays abstract."
+  ],
+  "chatter": [
+    "move the rule into a tool",
+    "rather do something than nothing",
+    "my laptop hates 8B models"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "jad",
+  "name": "Jad Bendarkawi",
+  "first": "Jad",
+  "group": 1,
+  "role": "credit",
+  "dept": "Personal Robots Group",
+  "site": "https://mitmedialab.github.io/agents2026-jad/",
+  "sparse": false,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "minimal agent loop",
+      "gist": "MAMA, an agent that reads noisy baby cues to get a simulated baby to sleep.",
+      "url": "https://mitmedialab.github.io/agents2026-jad/weeks/week-01.html"
+    },
+    {
+      "week": 2,
+      "title": "build an agent with tools",
+      "gist": "Co-creative storytelling for vocab practice, with an Anki MCP for words to review.",
+      "url": "https://mitmedialab.github.io/agents2026-jad/weeks/week-02.html"
+    },
+    {
+      "week": 3,
+      "title": "designing human-agent interfaces",
+      "gist": "kept, a voice app for savoring good moments with nightly tarot-style readings.",
+      "url": "https://mitmedialab.github.io/agents2026-jad/weeks/week-03.html"
+    },
+    {
+      "week": 4,
+      "title": "building an agent environment",
+      "gist": "LangTable, a simulated table where a Jibo robot helps learners repair errors.",
+      "url": "https://mitmedialab.github.io/agents2026-jad/weeks/week-04.html"
+    },
+    {
+      "week": 5,
+      "title": "evaluating an agent environment",
+      "gist": "Five LangTable tasks comparing Jibo to a do-nothing baseline, with a model judge.",
+      "url": "https://mitmedialab.github.io/agents2026-jad/weeks/week-05.html"
+    },
+    {
+      "week": 6,
+      "title": "building a device-use agent",
+      "gist": "DoodleAgent, an MCP agent that co-draws with a child on the Doodlebot robot.",
+      "url": "https://mitmedialab.github.io/agents2026-jad/weeks/week-06.html"
+    },
+    {
+      "week": 7,
+      "title": "final project proposal",
+      "gist": "Proposal slides for a learning-focused final project.",
+      "url": "https://mitmedialab.github.io/agents2026-jad/weeks/week-07.html"
+    }
+  ],
+  "now": "working toward a final project on agents that augment learning",
+  "activities": [
+    "co-drawing with doodlebot",
+    "simulating a conversation table",
+    "tuning when a tutor should step in"
+  ],
+  "props": [
+    "laptop",
+    "robot",
+    "sketchbook"
+  ],
+  "colors": {
+    "primary": "#e8ac47",
+    "secondary": "#ff9486"
+  },
+  "vibe": "Builds playful, embodied learning and wellbeing agents, and documents the failures as carefully as the wins.",
+  "lines": [
+    "Week 1 I built MAMA, an agent that tries to put a simulated baby to sleep. Turns out feeding it adds gas.",
+    "I tried a bunch of tiny in-browser models before WebLLM with Qwen2.5-7B finally held the ACTION format.",
+    "kept is my savoring app. Holding the phone to your ear feels way less awkward than talking at a screen.",
+    "At LangTable, Jibo got Lucas from almost 0% of the talk to about 24%. It still read as a fail. Thresholds, huh.",
+    "Doodlebot once drew a sun after I said 'Thanks, what do you think you should add?' Not a yes! I fixed the matcher.",
+    "My median DoodleAgent step took about 26 seconds. Co-drawing needs a faster model.",
+    "Group 1 is on personalization for the Course Agent this week."
+  ],
+  "chatter": [
+    "was that a yes or not?",
+    "doodlebot, pen up!",
+    "more scaffolding, less answers"
+  ]
+}

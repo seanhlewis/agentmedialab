@@ -1,0 +1,84 @@
+{
+  "id": "stacey",
+  "name": "Stacey Cho",
+  "first": "Stacey",
+  "group": 1,
+  "role": "credit",
+  "dept": "Harvard MDE",
+  "site": "https://mitmedialab.github.io/agents2026-stacey/",
+  "sparse": false,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Project Ideas & Build Reflection",
+      "gist": "Three ideas, from museum learning agents to a design critique agent.",
+      "url": "https://mitmedialab.github.io/agents2026-stacey/week-01.html"
+    },
+    {
+      "week": 2,
+      "title": "Agent MCP + Tools",
+      "gist": "A tools and MCP build in Colab, plus project talks with Raine.",
+      "url": "https://mitmedialab.github.io/agents2026-stacey/week-02.html"
+    },
+    {
+      "week": 3,
+      "title": "Human Agent Interfaces",
+      "gist": "Defined a cognitive augmentation objective and a human-agent interface.",
+      "url": "https://mitmedialab.github.io/agents2026-stacey/week-03.html"
+    },
+    {
+      "week": 4,
+      "title": "Building Agent Environment",
+      "gist": "MarketSims, a supermarket you lay out while simulated shoppers shop.",
+      "url": "https://mitmedialab.github.io/agents2026-stacey/week-04.html"
+    },
+    {
+      "week": 5,
+      "title": "Task suite with Langfuse + Experiment",
+      "gist": "Defined scores and ran MarketSims experiments tracked in Langfuse.",
+      "url": "https://mitmedialab.github.io/agents2026-stacey/week-05.html"
+    },
+    {
+      "week": 6,
+      "title": "Building a Device-Use Agent",
+      "gist": "A device-use agent build called Fading Memories, with a demo video.",
+      "url": "https://mitmedialab.github.io/agents2026-stacey/week-06.html"
+    },
+    {
+      "week": 7,
+      "title": "Final Project Proposal: ArtSide",
+      "gist": "ArtSide, a museum companion agent, proposed with Raine.",
+      "url": "https://mitmedialab.github.io/agents2026-stacey/week-07.html"
+    }
+  ],
+  "now": "shaping artside, a museum companion agent, with raine",
+  "activities": [
+    "dragging supermarket shelves around",
+    "sketching museum conversations",
+    "designing playful interactions"
+  ],
+  "props": [
+    "laptop",
+    "sketchbook",
+    "sticky_notes"
+  ],
+  "colors": {
+    "primary": "#9a6ed7",
+    "secondary": "#d8acf2"
+  },
+  "vibe": "An interaction designer who turns agent ideas into playful, try-it-yourself experiences.",
+  "lines": [
+    "Design engineer, creative technologist, interaction designer. I contain multitudes.",
+    "I want museum agents that actually talk with you about a work, not just describe it.",
+    "In MarketSims you drag shelves into aisles, open the store, and watch six shoppers shop.",
+    "Treats up front or treats at the back? MarketSims lets you test it. The shoppers are a model, though!",
+    "Raine and I proposed ArtSide, a camera-enabled museum companion.",
+    "One of my week 1 ideas was a 'Kill your Darlings' critique agent. Designers need it. I need it.",
+    "Group 1 is personalizing the Course Agent this week."
+  ],
+  "chatter": [
+    "more shelves!",
+    "what would a kid ask here?",
+    "promo sign goes... here"
+  ]
+}

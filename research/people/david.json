@@ -1,0 +1,84 @@
+{
+  "id": "david",
+  "name": "David Selles",
+  "first": "David",
+  "group": 4,
+  "role": "credit",
+  "dept": "Master in Design Studies, Harvard Graduate School of Design",
+  "site": "https://mitmedialab.github.io/agents2026-david/",
+  "sparse": false,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Building My First Agent",
+      "gist": "Built his documentation site and a 20 Questions agent that can ask, guess, or buy a hint.",
+      "url": "https://mitmedialab.github.io/agents2026-david/week01/"
+    },
+    {
+      "week": 2,
+      "title": "Build an Agent With Tools",
+      "gist": "Deckhand, a design partner drawing Oblique Strategies, heuristics and Smithsonian objects.",
+      "url": "https://mitmedialab.github.io/agents2026-david/week02/"
+    },
+    {
+      "week": 3,
+      "title": "Ideation Map",
+      "gist": "A D3 ideation map with an AI partner that pushes for more divergent ideas.",
+      "url": "https://mitmedialab.github.io/agents2026-david/week03/"
+    },
+    {
+      "week": 4,
+      "title": "AI Agent Environments",
+      "gist": "Turned the ideation map into an environment for testing an AI creativity partner.",
+      "url": "https://mitmedialab.github.io/agents2026-david/week04/"
+    },
+    {
+      "week": 5,
+      "title": "Evaluating Week 4's Environment",
+      "gist": "Scored the agent's idea diversity with embeddings and graded idea relevance by hand.",
+      "url": "https://mitmedialab.github.io/agents2026-david/week05/"
+    },
+    {
+      "week": 6,
+      "title": "Agent-Controlled Smart Lighting",
+      "gist": "An MCP server that lets an agent set his Philips Hue lights to match the room's mood.",
+      "url": "https://mitmedialab.github.io/agents2026-david/week06/"
+    },
+    {
+      "week": 7,
+      "title": "Final Project Proposal",
+      "gist": "With Brooke: an associative multi-agent network to boost creativity and fight sameness.",
+      "url": "https://mitmedialab.github.io/agents2026-david/week07/"
+    }
+  ],
+  "now": "developing an associative multi-agent network that helps people think more divergently",
+  "activities": [
+    "drawing oblique strategies cards for an agent",
+    "measuring idea diversity with embeddings",
+    "tuning smart lights with an mcp server"
+  ],
+  "props": [
+    "laptop",
+    "sticky_notes",
+    "sketchbook"
+  ],
+  "colors": {
+    "primary": "#4acaa8",
+    "secondary": "#d1685f"
+  },
+  "vibe": "A thoughtful designer-educator who reads the research first, cites everything, and keeps asking how AI can widen human creativity instead of flattening it.",
+  "lines": [
+    "My worry is that AI makes all our ideas look alike. So I keep building agents that push the other way.",
+    "Deckhand draws Oblique Strategies, Design Heuristics, and random Smithsonian objects. Shuffle the deck!",
+    "In my evals the agent's ideas were more diverse than its human partner's, but rated less relevant. Stark divide.",
+    "I gave Claude my living room lights. Kinda spooky, kinda cozy.",
+    "Round 4 got a bolder prompt, and it colored a lamp to match my roommate's seltzer.",
+    "I took How to Make (Almost) Anything back in 2018, so a documentation site felt like home.",
+    "Brooke and I proposed an associative multi-agent network for creativity."
+  ],
+  "chatter": [
+    "draw another card",
+    "raspberry and coral, nice",
+    "too many similar ideas"
+  ]
+}

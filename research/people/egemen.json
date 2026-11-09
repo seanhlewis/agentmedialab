@@ -1,0 +1,82 @@
+{
+  "id": "egemen",
+  "name": "Egemen Sert",
+  "first": "Egemen",
+  "group": 4,
+  "role": "credit",
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-egemen/",
+  "sparse": false,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "agentofchaos",
+      "gist": "An agent mind that spirals through cognitive distortions, then talks itself back to calm.",
+      "url": "https://mitmedialab.github.io/agents2026-egemen/week01/"
+    },
+    {
+      "week": 2,
+      "title": "goofballtimes",
+      "gist": "A personal news bulletin about MIT, Boston and his research, tuned to his taste.",
+      "url": "https://mitmedialab.github.io/agents2026-egemen/week02/"
+    },
+    {
+      "week": 3,
+      "title": "lemmespiralforyou",
+      "gist": "An agent that spirals with you so you notice your own rumination patterns.",
+      "url": "https://mitmedialab.github.io/agents2026-egemen/week03/"
+    },
+    {
+      "week": 4,
+      "title": "spiralverse",
+      "gist": "Modeled the user's emotional state as the environment, with a belief over 18 emotions.",
+      "url": "https://mitmedialab.github.io/agents2026-egemen/week04/"
+    },
+    {
+      "week": 5,
+      "title": "spiralbench",
+      "gist": "Evaluated the agent with a cheaper, validated emotion predictor and reappraisal practice.",
+      "url": "https://mitmedialab.github.io/agents2026-egemen/week05/"
+    },
+    {
+      "week": 6,
+      "title": "sol lamba",
+      "gist": "With Juan Ruben: live earthquake alerts turned into Philips Hue lamp colors."
+    },
+    {
+      "week": 7,
+      "title": "lemmespiralforyou presentation",
+      "gist": "Final project proposal with Juan Ruben: offload the spiral, learn how you spin."
+    }
+  ],
+  "now": "building lemmespiralforyou with juan ruben, an agent that spirals for you and then helps you de-spiral",
+  "activities": [
+    "tagging thought spirals with cognitive distortions",
+    "validating an emotion predictor",
+    "designing safety dials for distress"
+  ],
+  "props": [
+    "laptop",
+    "headphones",
+    "synth"
+  ],
+  "colors": {
+    "primary": "#ffb000",
+    "secondary": "#33ff66"
+  },
+  "vibe": "A rigorous, research-grounded builder with a retro tape-deck aesthetic, pairing psychology papers with careful evaluation and safety design.",
+  "lines": [
+    "Insert tape and press play. Welcome to my project log.",
+    "Hand me a worry and I'll do the spiraling for you, with you in the loop.",
+    "My week 1 agent spirals through the ten classic distortions, then finds its way back with CBT skills. Relapses included.",
+    "In week 5 my new emotion predictor hit 96.3% accuracy and runs about 29 times cheaper than the Claude judge.",
+    "Juan Ruben and I made sol lamba: earthquake alerts that turn your Hue lamps a warning color.",
+    "There are two safety dials: thought severity and user distress. If either runs high, the spiral backs off.",
+    "Goofball Times is my personal newspaper. I leave voice notes and the editor learns my taste."
+  ],
+  "chatter": [
+    "what if, what if, what if",
+    "eject to healing stage",
+    "rewinding the tape"
+  ]
+}

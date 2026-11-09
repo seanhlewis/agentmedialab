@@ -1,0 +1,42 @@
+{
+  "id": "lilith",
+  "name": "Lilith Yu",
+  "first": "Lilith",
+  "group": 6,
+  "role": "credit",
+  "dept": "MDes Mediums, Harvard GSD",
+  "site": "https://mitmedialab.github.io/agents2026-lilith/",
+  "sparse": false,
+  "weeks": [
+    { "week": 1, "title": "Extinct animals map", "gist": "Click anywhere on a world map and a local Qwen agent finds extinct animals that lived nearby." },
+    { "week": 2, "title": "School work agent", "gist": "Coursework, a calm dashboard and chat agent with 25 tools that gathers all her assignments." },
+    { "week": 3, "title": "The Library: a librarian for remembering", "gist": "An agentic library that helps her capture, shelve and recall what she learns in her own words." },
+    { "week": 4, "title": "Long-horizon computer use", "gist": "Read OSWorld and set up a macOS VM for an agent steered through two cursors." },
+    { "week": 5, "title": "Cursor gestures", "gist": "Evaluated whether a computer-use agent reads pointer gestures that change what a task means." },
+    { "week": 6, "title": "iPod nano nightly agent", "gist": "An agent packs tomorrow's schedule, weather and a curiosity podcast onto an old iPod nano." },
+    { "week": 8, "title": "Proposal deck", "gist": "Final project proposal with Yuxiang Cheng, presented on November 3." }
+  ],
+  "now": "prototyping an agent cursor that shows its intention before it asks for approval",
+  "activities": [
+    "drawing circles around things for the agent's cursor",
+    "packing tomorrow onto an old ipod nano",
+    "shelving ideas in a library that grows with her"
+  ],
+  "props": ["laptop", "books"],
+  "colors": { "primary": "#49a2de", "secondary": "#161b22" },
+  "vibe": "An interaction designer who builds gentle, physical-feeling interfaces for agents, from libraries and cursors to an iPod, and always keeps the human in charge.",
+  "lines": [
+    "Week 1 I made a map agent: click anywhere and it digs up extinct animals that used to live nearby.",
+    "Circling something with my cursor more than doubled the agent's pass rate: 86% against 38% with a plain Wait button.",
+    "My old iPod nano gets tomorrow packed onto it every night, then my phone stays in my bag.",
+    "The iPod reported a brand-new track with 10 plays. It had inherited them from an old podcast! Always check the device.",
+    "I really like libraries, so I built one with a librarian that asks for my sentence first.",
+    "The UTM macOS VM kept making my laptop lag and reboot, so I moved to a mock OS in the browser.",
+    "Yuxiang and I pitched our final project on November 3: show the agent's intention before it acts."
+  ],
+  "chatter": [
+    "is that cursor hesitating?",
+    "the iPod is docked for the night",
+    "save first, think in my own words"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "maya",
+  "name": "Maya Detwiller",
+  "first": "Maya",
+  "group": 3,
+  "role": "listener",
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-maya/",
+  "sparse": false,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Soup Agent",
+      "gist": "A soup agent that can't tell time but watches for fragrant garlic and soft potatoes."
+    },
+    {
+      "week": 2,
+      "title": "Reverse Astro Chart generator",
+      "gist": "An astrology agent that suggests when and where you could be reborn so your chart fits."
+    },
+    {
+      "week": 3,
+      "title": "Immerse and Reflect Agent",
+      "gist": "A voice-first sensemaking tool tying a listener's reflections to stories and RQs."
+    }
+  ],
+  "now": "designing a listening tool where people speak back to stories and ai proposes connections to their research questions",
+  "activities": [
+    "listening to first-hand stories",
+    "recording voice memos about what she heard",
+    "sketching meta relations between reflections and rqs"
+  ],
+  "props": [
+    "laptop",
+    "headphones",
+    "plant"
+  ],
+  "colors": {
+    "primary": "#556B2F",
+    "secondary": "#F5F5F5"
+  },
+  "vibe": "A playful, poetic builder who names her site Agent Eden and cares most about keeping humans at the center of listening and reflection.",
+  "lines": [
+    "Welcome to Agent Eden. You can name creations, eat an apple, or talk to a snake.",
+    "My first agent made soup. It can't tell time, but it knows when the garlic gets fragrant.",
+    "Week 2 was a reverse astro chart. If your chart feels wrong, it suggests when to be reborn.",
+    "Honestly, the astrology agent limped to the finish line on almost every run. Context got long, consistency fell apart.",
+    "Now I'm building Immerse and Reflect: you listen, you speak back, and only then does the AI chime in.",
+    "I want people spending most of their time listening, not tagging and highlighting.",
+    "This week I'm with Group 3 on the week 8 build."
+  ],
+  "chatter": [
+    "garlic is fragrant, add potatoes",
+    "listen first, tag never",
+    "the snake says hi"
+  ]
+}

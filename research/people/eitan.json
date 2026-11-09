@@ -1,0 +1,38 @@
+{
+  "id": "eitan",
+  "name": "Eitan Wolf",
+  "first": "Eitan",
+  "group": null,
+  "role": "listener-only",
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-eitan/",
+  "sparse": true,
+  "weeks": [],
+  "now": "following the agent debates this term",
+  "activities": [
+    "following the agent debates",
+    "taking notes in class",
+    "watching the weekly demos"
+  ],
+  "props": [
+    "laptop",
+    "books"
+  ],
+  "colors": {
+    "primary": "#4f7a5a",
+    "secondary": "#d9c9a3"
+  },
+  "vibe": "Follows how the class builds and argues about agents, and picks up ideas along the way.",
+  "lines": [
+    "Hi, I'm Eitan! I'm in the class this term, following the agent debates.",
+    "My site says 'Welcome Eitan' and that's the whole tour.",
+    "It's fun watching everyone's builds come together week by week.",
+    "I'm here to learn how people think about agents for cognitive augmentation.",
+    "No project to show yet, just a lot of notes."
+  ],
+  "chatter": [
+    "noted.",
+    "that's a cool demo",
+    "hmm, good question"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "meiri",
+  "name": "Meiri Anto",
+  "first": "Meiri",
+  "group": 1,
+  "role": "listener",
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-meiri/",
+  "sparse": true,
+  "weeks": [],
+  "now": "working on the group 1 course agent personalization build",
+  "activities": [
+    "following the agent debates",
+    "taking notes in class",
+    "following group 1's build"
+  ],
+  "props": [
+    "laptop",
+    "mug"
+  ],
+  "colors": {
+    "primary": "#6b8fb3",
+    "secondary": "#e6d8b8"
+  },
+  "vibe": "Soaks up how everyone else builds their agents.",
+  "lines": [
+    "Hi! I'm Meiri. This week I'm with Group 1 on the Course Agent build.",
+    "My site is still just a welcome page. Very minimalist. Mostly on purpose.",
+    "I'm learning a lot just watching what everyone builds each week.",
+    "Group 1 is working on personalizing the Course Agent. I'm along for the ride.",
+    "Ask me again later in the term, I might have something to show."
+  ],
+  "chatter": [
+    "taking notes...",
+    "huh, good point",
+    "mm, interesting"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "manasi",
+  "name": "Manasi Vaidya",
+  "first": "Manasi",
+  "group": 5,
+  "role": "credit",
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-manasi/",
+  "sparse": false,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Course Documentation Site, Final Project Ideas, and Minimal Loop Agent Build",
+      "gist": "A flip-book notebook site where a cartoon of her draws each week's page.",
+      "url": "https://mitmedialab.github.io/agents2026-manasi/week-1.html"
+    },
+    {
+      "week": 2,
+      "title": "Clara Accessibility Benchmark",
+      "gist": "An agent that stress-tests voice assistants against simulated older-adult Clara personas.",
+      "url": "https://mitmedialab.github.io/agents2026-manasi/week-2.html"
+    },
+    {
+      "week": 3,
+      "title": "Clara Perspective-Taking Studio",
+      "gist": "A reflection tool where designers predict how Clara will do before watching her try.",
+      "url": "https://mitmedialab.github.io/agents2026-manasi/week-3.html"
+    },
+    {
+      "week": 4,
+      "title": "Clara Pharmacy Calls",
+      "gist": "One unchanged pharmacy call played to nine Claras, showing where it quietly fails.",
+      "url": "https://mitmedialab.github.io/agents2026-manasi/week-4.html"
+    },
+    {
+      "week": 5,
+      "title": "Evaluating Clara Agents",
+      "gist": "Scores voice designs on who they leave out across 207 ability profiles.",
+      "url": "https://mitmedialab.github.io/agents2026-manasi/week-5.html"
+    },
+    {
+      "week": 6,
+      "title": "CLARA Load Map",
+      "gist": "An agent drives a Fire TV remote and maps where older adults would likely get stuck.",
+      "url": "https://mitmedialab.github.io/agents2026-manasi/week-6.html"
+    }
+  ],
+  "now": "mapping where tv menus ask too much of older adults, one remote press at a time",
+  "activities": [
+    "simulating calls with clara personas",
+    "driving a fire tv over adb",
+    "scoring silent failures in voice agents"
+  ],
+  "props": [
+    "laptop",
+    "sketchbook",
+    "phone"
+  ],
+  "colors": {
+    "primary": "#ff6a3d",
+    "secondary": "#2f3a55"
+  },
+  "vibe": "A design-thinking builder focused on accessibility, who turns simulated older adults into evidence designers can actually act on.",
+  "lines": [
+    "Flip through my notebook! A little cartoon of me draws each page as it unlocks.",
+    "Meet Clara, a simulated older adult. She shows designers where their voice assistants lose people.",
+    "My ultra-short script backfired: it confused Clara and caused 7 repeat requests.",
+    "Across 9,000 simulated pharmacy calls, success fell from 89% to 29% for the oldest, lowest-capacity Clara.",
+    "The scariest bug is the silent failure: the log says refill submitted, but Clara can't act on it.",
+    "Repeating the whole message word for word after \"you lost me\" caused 64% of failures.",
+    "Families tape over remote buttons. My load map shows which TV screen is the real problem."
+  ],
+  "chatter": [
+    "clara is lost again",
+    "which button gets me back?",
+    "that's a silent failure"
+  ]
+}

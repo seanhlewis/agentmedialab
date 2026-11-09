@@ -1,0 +1,67 @@
+{
+  "id": "mateo",
+  "name": "Mateo Larrea Ferro",
+  "first": "Mateo",
+  "group": 1,
+  "role": "listener",
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-mateo/",
+  "sparse": false,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "shape the world",
+      "gist": "An agent that reshapes his site's sound and visuals from a plain request."
+    },
+    {
+      "week": 2,
+      "title": "Larry: connecting my class notes",
+      "gist": "Larry, a swimming creature that links his class notes in a graph."
+    },
+    {
+      "week": 3,
+      "title": "Melody: arranging with DrC",
+      "gist": "DrC turns keyboard melodies into polished music from described sounds."
+    },
+    {
+      "week": 4,
+      "title": "Ludwig: a room to listen in",
+      "gist": "An environment where an agent with four mics and no eyes hears machines."
+    },
+    {
+      "week": 5,
+      "title": "Ludwig: grading the listener",
+      "gist": "Eight tasks, five tries each, graded by code and by a model judge."
+    }
+  ],
+  "now": "planning a dream diary with ray that turns spoken dreams into visuals and sound",
+  "activities": [
+    "tuning an underwater soundscape",
+    "teaching an agent to listen",
+    "arranging melodies with an agent"
+  ],
+  "props": [
+    "laptop",
+    "headphones",
+    "synth"
+  ],
+  "colors": {
+    "primary": "#7ab7d4",
+    "secondary": "#a9d9c7"
+  },
+  "vibe": "A sound-first builder who makes agents that listen and keeps his notes in an underwater world.",
+  "lines": [
+    "My site is an underwater world. Headphones recommended.",
+    "Week 1: 'make the rain softer.' The agent took rain from 1 to 0.5 and left the voices alone.",
+    "Larry is a little swimming creature that connects my class notes. No embeddings, just a graph.",
+    "Describing sound in words is hard. DrC still doesn't get 'less cheesy'.",
+    "Ludwig has four microphones and no eyes. It has to work out which machine just changed.",
+    "My first listening room was too easy. Standing still was right nine times out of twelve, so I added a wall and a vent.",
+    "Ray and I want to turn spoken dreams into a visual and a soundscape."
+  ],
+  "chatter": [
+    "is that an echo or a vent?",
+    "sound on, please",
+    "less cheesy..."
+  ]
+}

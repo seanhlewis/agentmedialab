@@ -1,0 +1,78 @@
+{
+  "id": "yuxiang",
+  "name": "Yuxiang Cheng",
+  "first": "Yuxiang",
+  "group": 1,
+  "role": "credit",
+  "dept": "MAS, MIT Media Lab",
+  "site": "https://mitmedialab.github.io/agents2026-yuxiang/",
+  "sparse": false,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Presentation Harness",
+      "gist": "A voice-aware agent that presents his work by composing the website itself.",
+      "url": "https://mitmedialab.github.io/agents2026-yuxiang/week01/"
+    },
+    {
+      "week": 2,
+      "title": "WebMemo",
+      "gist": "An agent that files saved browser tabs by guessing why he saved them.",
+      "url": "https://mitmedialab.github.io/agents2026-yuxiang/week02/"
+    },
+    {
+      "week": 3,
+      "title": "AimRoom",
+      "gist": "An agent furnishes a room while you feel its preferences as pull and resistance.",
+      "url": "https://mitmedialab.github.io/agents2026-yuxiang/week03/"
+    },
+    {
+      "week": 4,
+      "title": "Robotic Memory",
+      "gist": "A simulated balancing robot watches the FoodCam counter and must stay alive.",
+      "url": "https://mitmedialab.github.io/agents2026-yuxiang/week04/"
+    },
+    {
+      "week": 5,
+      "title": "Robotic Memory: evaluating the environment",
+      "gist": "36 episodes across 2 models and 6 tasks, against a feed-only baseline.",
+      "url": "https://mitmedialab.github.io/agents2026-yuxiang/week05/"
+    },
+    {
+      "week": 6,
+      "title": "Blimbo",
+      "gist": "An LLM flies a tethered helium balloon robot over MCP using a 360 camera.",
+      "url": "https://mitmedialab.github.io/agents2026-yuxiang/week06/"
+    }
+  ],
+  "now": "rerunning blimbo's sound-finding task after a helium refill",
+  "activities": [
+    "flying a balloon robot",
+    "flashing zephyr firmware",
+    "sorting thousands of browser tabs"
+  ],
+  "props": [
+    "laptop",
+    "robot",
+    "solder"
+  ],
+  "colors": {
+    "primary": "#ff238b",
+    "secondary": "#ff85ba"
+  },
+  "vibe": "A maker who puts agents into real bodies and hardware, then measures carefully where they fail.",
+  "lines": [
+    "My whole website is the week 1 assignment. It talks, and it builds the page for you.",
+    "I had 2,010 tabs open in seven workspaces. WebMemo is my attempt to make peace with that.",
+    "In AimRoom the agent furnishes a room and you can grab any piece mid-motion. No approval buttons.",
+    "My simulated robot watches the FoodCam for you. Its battery is its life, so no wasted trips.",
+    "The feed-only baseline was stronger than I expected. Humbling.",
+    "Blimbo is a helium balloon with propellers. Its first real sound-finding run hit the railing. I stopped it after 24 steps.",
+    "Group 1 is personalizing the Course Agent. I already filed an issue about its memory, so I have opinions."
+  ],
+  "chatter": [
+    "needs more helium",
+    "it's following shoes again",
+    "one more listen sweep"
+  ]
+}

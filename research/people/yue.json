@@ -1,0 +1,61 @@
+{
+  "id": "yue",
+  "name": "Yue Yang",
+  "first": "Yue",
+  "group": 6,
+  "role": "listener",
+  "dept": "Tangible Media Group, MIT Media Lab",
+  "site": "https://mitmedialab.github.io/agents2026-yue/",
+  "sparse": false,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "A first step into agency",
+      "gist": "A moon-themed journal site with a research constellation, plus three final project ideas."
+    },
+    {
+      "week": 3,
+      "title": "Thinking together on a canvas",
+      "gist": "Branchwork, a research canvas where AI proposes connections and she confirms or rejects them."
+    },
+    {
+      "week": 4,
+      "title": "Designing with verifiable feedback",
+      "gist": "An OpenSim workspace where Claude tests and revises an elastic band for a side leg raise."
+    },
+    {
+      "week": 5,
+      "title": "Testing design reliability",
+      "gist": "Six tasks, three runs each: 8 of 18 wearable designs passed every mechanical check."
+    }
+  ],
+  "now": "testing whether an agent can design a wearable that resists only when triggered",
+  "activities": [
+    "simulating a resistance band on a hip in opensim",
+    "dragging stars around her research constellation",
+    "connecting cards on a research canvas"
+  ],
+  "props": [
+    "laptop",
+    "clay"
+  ],
+  "colors": {
+    "primary": "#e5d386",
+    "secondary": "#090a0b"
+  },
+  "vibe": "A researcher, designer and maker who thinks through making, and builds quiet, moonlit interfaces that explain exactly why things connect.",
+  "lines": [
+    "Yue means moon and Yang evokes the sun, so my site has a little half-lit circle as its mark.",
+    "My research constellation links 29 publications by shared features, not citations. Drag a star and the network reshapes!",
+    "Week 4 I used the human body as the environment: an OpenSim model doing a side leg raise against a band.",
+    "Honest result: 8 of 18 runs passed. Every failure missed the ON curve limit.",
+    "In one run the agent submitted a worse design than one it had already tested. Traces tell you so much.",
+    "I'm a visual thinker. Branchwork lets me see ideas, images and papers side by side on one canvas.",
+    "This week I'm with Group 6, building personalization for the Course Agent."
+  ],
+  "chatter": [
+    "connecting dots, making possibilities",
+    "where should the band sit?",
+    "waxing gibbous, week 4"
+  ]
+}

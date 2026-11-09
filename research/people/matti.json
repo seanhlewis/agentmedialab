@@ -1,0 +1,34 @@
+{
+  "id": "matti",
+  "name": "Matti Gruener",
+  "first": "Matti",
+  "group": 2,
+  "role": "credit",
+  "dept": "MIT Media Lab",
+  "site": "https://mitmedialab.github.io/agents2026-matti/",
+  "sparse": false,
+  "weeks": [
+    { "week": 1, "title": "A first simple agent: The Newcomer", "gist": "An agent tries to befriend four townies, including a florist who can be made a liar." },
+    { "week": 2, "title": "An agent with tools, skills and MCP", "gist": "A smolagents system that gives guided tours on a map, like the semiconductor supply chain." },
+    { "week": 3, "title": "Ambient Insights", "gist": "A voice agent plus a background agent that places insights on a Cambridge mobility map." },
+    { "week": 4, "title": "Environment for explanations", "gist": "A presenter agent gives map tours to an LLM observer who then takes a quiz." },
+    { "week": 5, "title": "Evaluation", "gist": "18 runs testing whether the presenter does better when it knows the quiz." },
+    { "week": 6, "title": "A Real Device", "gist": "His assistant Zora talks through glyph, a calm e-ink wallet with two buttons and two LEDs." },
+    { "week": 8, "title": "Memories", "gist": "With Juan Ruben and Sandra, an onboarding questionnaire gives the course agent memory." }
+  ],
+  "now": "adding memory to the course agent with juan ruben and sandra through an onboarding questionnaire",
+  "activities": ["sending e-ink frames to glyph over ble", "scoring map tours with an llm quiz-taker", "de-duplicating course agent memories"],
+  "props": ["laptop", "map", "solder"],
+  "colors": { "primary": "#ff2e6c", "secondary": "#20201d" },
+  "vibe": "A former visual effects artist who builds J.A.R.V.I.S.-style visual agents and calm hardware, and documents as he goes.",
+  "lines": [
+    "My week 1 newcomer just wanted friends. The local Qwen kept talking to the lying florist, hoping they'd make up their mind, and hit the 25-step cap.",
+    "I built glyph, a credit card wallet with an e-ink screen. Now Zora can ask me yes or no questions on it.",
+    "Zora lives in my Obsidian vault. About 1,400 small git commits so far, so her mistakes are reversible.",
+    "Week 5: 10 of 17 runs blew past the word limit. I'd call that mixed results.",
+    "I used to work in visual effects on films like Iron Man. J.A.R.V.I.S. is still a bit of an inspiration.",
+    "Group 2 gave the course agent memory. One saved preference and it explained machine learning with a newsroom example.",
+    "Known bug: submit the questionnaire twice and it remembers everything twice."
+  ],
+  "chatter": ["show, don't tell", "glyph says hi", "is the observer just guessing?"]
+}

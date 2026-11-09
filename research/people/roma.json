@@ -1,0 +1,33 @@
+{
+  "id": "roma",
+  "name": "Roma Luo",
+  "first": "Roma",
+  "group": 3,
+  "role": "credit",
+  "dept": "Harvard Graduate School of Design",
+  "site": "https://mitmedialab.github.io/agents2026-roma/",
+  "sparse": false,
+  "weeks": [
+    { "week": 1, "title": "The Downloads-folder naming agent", "gist": "A local LLM with a hand-written loop that renames files in a real Downloads folder." },
+    { "week": 2, "title": "Calendar++", "gist": "A Swift calendar where agents for each life goal bid for hours and nothing runs unsigned." },
+    { "week": 3, "title": "Frontier Map", "gist": "A desktop dial: predict how a task will go for Claude, then see where you misjudge it." },
+    { "week": 4, "title": "Liminal", "gist": "A sleep-edge environment built from one real night of EEG, played like a turntable record." },
+    { "week": 5, "title": "Evaluating Liminal", "gist": "120 episodes in Langfuse: the rule agent wins overall, the LLM is the best guard." },
+    { "week": 6, "title": "A Pocket 4 that remembers where I left things", "gist": "A DJI Osmo Pocket 4 as an MCP agent that looks for the things he forgets on his desk." }
+  ],
+  "now": "building a personalization feature for the course agent with group 3",
+  "activities": ["asking a gimbal camera where the keys are", "pressing a night of eeg into a record", "predicting how claude will do before each task"],
+  "props": ["laptop", "camera"],
+  "colors": { "primary": "#ececec", "secondary": "#070707" },
+  "vibe": "A cold, terse, minimal builder whose site is itself an agent that answers from his memory of the course.",
+  "lines": [
+    "Ask the site. It answers from my memory.",
+    "Calendar++. The model proposes. Code decides. I sign.",
+    "Liminal. Rule agent pass@1 0.68. LLM 0.57. Silence 0.28.",
+    "The LLM woke a sleeper at the right moment, then asked a sleeping person for the idea.",
+    "My Pocket 4 finds my AirPods case. In view, 3 of 3. Taken away, 0 of 3.",
+    "Yesterday it was an airpods case. Today, an earbuds case. Memory search missed it.",
+    "Final idea: Hippocampus+. It remembers when you changed your mind."
+  ],
+  "chatter": ["pass^5 tells the truth", "check the action worked", "where are my keys?"]
+}

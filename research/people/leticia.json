@@ -1,0 +1,71 @@
+{
+  "id": "leticia",
+  "name": "Leticia Izquierdo",
+  "first": "Leticia",
+  "group": 3,
+  "role": "credit",
+  "dept": "City Science, MIT Media Lab",
+  "site": "https://mitmedialab.github.io/agents2026-leticia/",
+  "sparse": false,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Build an Agent",
+      "gist": "Kokoro, a rooster agent at her desk that suggests places to go in a map of East Boston.",
+      "url": "https://mitmedialab.github.io/agents2026-leticia/week01.html"
+    },
+    {
+      "week": 2,
+      "title": "Connect to MCP servers",
+      "gist": "Blender and Higgsfield MCPs turn a 3D Cambridge model into videos of city characters.",
+      "url": "https://mitmedialab.github.io/agents2026-leticia/week02.html"
+    },
+    {
+      "week": 3,
+      "title": "New interfaces for agents",
+      "gist": "Kokoro as an attention filter: a desktop widget for work and a hat for the city.",
+      "url": "https://mitmedialab.github.io/agents2026-leticia/week03.html"
+    },
+    {
+      "week": 4,
+      "title": "Building and evaluating an agent environment",
+      "gist": "23 episodes: with Kokoro, 0 app switches and lower mental load than doing tasks by hand.",
+      "url": "https://mitmedialab.github.io/agents2026-leticia/week04.html"
+    },
+    {
+      "week": 5,
+      "title": "City Agents: an interactive environment in Blender",
+      "gist": "Change Mass Ave in Blender by voice and pointing, and simulate how people would use it.",
+      "url": "https://mitmedialab.github.io/agents2026-leticia/week05.html"
+    }
+  ],
+  "now": "building a personalization feature for the course agent with group 3",
+  "activities": [
+    "pointing at mass ave in blender",
+    "waking kokoro the rooster with a hey",
+    "counting app switches with a logger"
+  ],
+  "props": [
+    "laptop",
+    "map"
+  ],
+  "colors": {
+    "primary": "#5c94ff",
+    "secondary": "#ffba2e"
+  },
+  "vibe": "An architect and media designer who brings agents out into the city, mixing maps, 3D models and wearable companions.",
+  "lines": [
+    "Hey Kokoro! He's my rooster agent. He lives in the corner of my screen and naps until I call him.",
+    "Kokoro started as a cap with sensors I wore on the street. This term he moved indoors, and onto my desk.",
+    "With Kokoro I had 0 app switches. By hand, 1.4 switches and 21 seconds away on average.",
+    "My evaluator said the translations failed. They were fine. The bug was my own reset.",
+    "The speech recognizer kept hearing Pattie as Paty, Fátima or Maes.",
+    "Can we simulate whether a public space will attract people? That's what City Agents is asking.",
+    "I connected Blender and Higgsfield over MCP to make videos of characters who live in Cambridge."
+  ],
+  "chatter": [
+    "hey kokoro, go back to sleep",
+    "zoning data loaded",
+    "do I have time for coffee?"
+  ]
+}

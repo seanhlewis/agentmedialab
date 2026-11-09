@@ -1,0 +1,38 @@
+{
+  "id": "sandra",
+  "name": "Sandra Regina Boccia",
+  "first": "Sandra",
+  "group": 2,
+  "role": "listener",
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-sandra/",
+  "sparse": true,
+  "weeks": [],
+  "now": "working with group 2 on a personalization feature for the course agent",
+  "activities": [
+    "following the agent debates",
+    "taking notes during class",
+    "trying out the course agent"
+  ],
+  "props": [
+    "laptop",
+    "mug"
+  ],
+  "colors": {
+    "primary": "#3d5a80",
+    "secondary": "#e0b04a"
+  },
+  "vibe": "Follows the weekly builds closely and joins her group for the week 8 project.",
+  "lines": [
+    "Hi! I'm Sandra. This week I'm with Group 2 on the Course Agent build.",
+    "Every week someone builds an agent I didn't know was possible.",
+    "My site just says welcome for now. The rest of the class is doing the heavy documenting.",
+    "For week 8 I'm with group 2, working on personalizing the course agent.",
+    "I like hearing how everyone's agents fail as much as how they work."
+  ],
+  "chatter": [
+    "taking notes",
+    "great demo today",
+    "which week is this?"
+  ]
+}

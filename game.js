@@ -833,6 +833,7 @@ const ui = {
     this.mountBubble(P.first.toUpperCase(), P.group ? `GROUP ${P.group}` : 'VISITING');
     this.fillPanel(a);
     a.remember(clockStr(), 'talked with a visitor about their work');
+    if (window.Track) Track.event(`person/${P.id}`, P.name);
   },
   openSpecial(key, title, tag, lines, anchor) {
     this.closeBubble(); this.sel = null; this.special = anchor;
@@ -881,8 +882,19 @@ const ui = {
     $('p-name').textContent = P.name.toUpperCase();
     $('p-meta').textContent = [P.dept, P.group ? `Group ${P.group}` : null].filter(Boolean).join(' · ');
     $('p-vibe').textContent = P.vibe || '';
-    $('p-weeks').innerHTML = (P.weeks || []).length ? P.weeks.map((w) => `<li><span class="wk">W${w.week}</span>${esc(w.title)}</li>`).join('') : '<li>Nothing posted yet.</li>';
-    $('p-site').href = P.site;
+    $('p-themes').innerHTML = (P.themes || []).map((t) => `<span>${esc(t)}</span>`).join('');
+    $('p-weeks').innerHTML = (P.weeks || []).length ? P.weeks.map((w) => {
+      const title = w.url ? `<a href="${esc(w.url)}" target="_blank" rel="noopener" data-ev="build/${P.id}/${w.week}">${esc(w.title)} ↗</a>` : esc(w.title);
+      return `<li><span class="wk">W${w.week}</span>${title}${w.gist ? `<small>${esc(w.gist)}</small>` : ''}</li>`;
+    }).join('') : '<li>Nothing posted yet.</li>';
+    const byId = (id) => people.find((q) => q.id === id);
+    const pairs = (P.pairs || []).filter((x) => byId(x.with));
+    $('p-pairs-box').hidden = !pairs.length;
+    $('p-pairs').innerHTML = pairs.map((x) => `<li><button data-go="${x.with}" data-ev="pair/${P.id}/${x.with}">${esc(byId(x.with).name)}</button><small>${esc(x.mine)} ↔ ${esc(x.theirs)}. ${esc(x.reason)}</small></li>`).join('');
+    const rel = (P.related || []).filter((x) => byId(x.id));
+    $('p-rel-box').hidden = !rel.length;
+    $('p-rel').innerHTML = rel.map((x) => { const O = byId(x.id); return `<li><button data-go="${O.id}" data-ev="related/${P.id}/${O.id}"><i style="background:${O.primary}"></i>${esc(O.name)}</button><small>${O.group ? `Group ${O.group} · ` : ''}${esc(x.shared.join(', '))}</small></li>`; }).join('');
+    $('p-site').href = P.site; $('p-site').dataset.ev = `site/${P.id}`;
     const pc = $('portrait').getContext('2d');
     pc.clearRect(0, 0, 20, 24); withG(pc, () => drawPerson(P, 10, 23, 'down', 'stand', 0, { noShadow: true }));
     this.panelFor = a; this.fillNow(); this.fillMemory();
@@ -895,6 +907,13 @@ const ui = {
   },
 };
 const panel = $('panel');
+// links and buttons inside the panel: count them, and jump to a related classmate
+panel.addEventListener('click', (e) => {
+  const ev = e.target.closest('[data-ev]'); if (ev && window.Track) Track.event(ev.dataset.ev);
+  const go = e.target.closest('[data-go]'); if (go) openPerson(go.dataset.go);
+});
+function openPerson(id) { const a = agents.find((x) => x.P.id === id); if (a) ui.open(a); }
+window.studio = { openPerson, people: () => people, agents: () => agents };
 $('close').onclick = () => { panel.hidden = true; ui.panelFor = null; ui.close(); };
 
 const toWorld = (e) => [(e.clientX - ox) / scale, (e.clientY - oy) / scale];
@@ -902,11 +921,12 @@ function agentAt(wx, wy) { return agents.filter((a) => a.hit(wx, wy)).sort((a, b
 function tableAt(wx, wy) { return tables.find((T) => wx >= T.tx && wx <= T.tx + TABLE_W && wy >= T.ty && wy <= T.ty + TABLE_H + 5); }
 
 addEventListener('click', (e) => {
-  if (e.target.closest('#panel, #hud, .bubble')) return;
+  if (e.target.closest('#panel, #hud, .bubble, .page')) return;
   const [wx, wy] = toWorld(e);
   const a = agentAt(wx, wy);
   if (a) { if (ui.sel === a) ui.advance(); else ui.open(a); return; }
   if (wx >= 138 && wx <= 298 && wy >= 6 && wy <= 58) {
+    if (window.Track) Track.event('board', 'Whiteboard');
     return ui.openSpecial('board', 'WHITEBOARD', 'WEEK 8', [
       'Week 8: build a personalization feature for the Course Agent, in your group.',
       'How can a course agent remember, adapt and personalize to students to help them learn, stay motivated, or connect?',
@@ -916,9 +936,11 @@ addEventListener('click', (e) => {
     ], [218, 58]);
   }
   if (wx >= 304 && wx <= 390 && wy >= 8 && wy <= 54) {
+    if (window.Track) Track.event('pinboard', 'Pinboard');
     return ui.openSpecial('cork', 'PINBOARD', `${people.length} SITES`, ['Everyone\'s course site is pinned up here.', 'Click a person, then VISIT SITE in their card to read their write-ups.'], [348, 54]);
   }
   const T = tableAt(wx, wy);
+  if (T && T.occupants.length && window.Track) Track.event(`table/${T.group}`, `Group ${T.group} table`);
   if (T && T.occupants.length) return ui.openSpecial('table', `GROUP ${T.group}`, 'WEEK 8', [`${T.occupants.map((o) => o.P.first).join(' · ')}`, 'This table is building a personalization feature for the Course Agent this week.'], [T.tx + 42, T.ty]);
   ui.close();
 });

@@ -1,0 +1,77 @@
+{
+  "id": "ruipeng",
+  "name": "Ruipeng Wang",
+  "first": "Ruipeng",
+  "group": 5,
+  "role": "credit",
+  "dept": "MIT Media Lab",
+  "site": "https://mitmedialab.github.io/agents2026-ruipeng/",
+  "sparse": false,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "A first agent",
+      "gist": "A hand-written loop with a local model: a mother in water can only conceive once answered.",
+      "url": "https://mitmedialab.github.io/agents2026-ruipeng/week1/"
+    },
+    {
+      "week": 2,
+      "title": "Six tools",
+      "gist": "Six smolagents tools that each write a page: the water, the population, the arm, the nursery.",
+      "url": "https://mitmedialab.github.io/agents2026-ruipeng/week2/"
+    },
+    {
+      "week": 3,
+      "title": "Digital Zen Garden",
+      "gist": "Small lives gather around your gaze on the centre and scatter when you look away.",
+      "url": "https://mitmedialab.github.io/agents2026-ruipeng/week3/"
+    },
+    {
+      "week": 4,
+      "title": "Agents are each other's environment",
+      "gist": "A dish where every body of one line is a Claude agent deciding how many children to bear.",
+      "url": "https://mitmedialab.github.io/agents2026-ruipeng/week4/"
+    },
+    {
+      "week": 5,
+      "title": "Evaluating the agents",
+      "gist": "Claude and four fixed rules graded on 6 seeds across ten worlds, ecology parts removed in turn.",
+      "url": "https://mitmedialab.github.io/agents2026-ruipeng/week5/"
+    },
+    {
+      "week": 6,
+      "title": "The arm's desk",
+      "gist": "Say what the robot arm should do, Claude writes a 3D trace, and the real arm performs it.",
+      "url": "https://mitmedialab.github.io/agents2026-ruipeng/week6/"
+    }
+  ],
+  "now": "letting the whole dish take turns raising every child in raised by many",
+  "activities": [
+    "tending a dish of agents that are born, swim and give birth",
+    "grading lines of descendants across ten worlds and six seeds",
+    "asking a robot arm to wave hello through a Claude-written trace"
+  ],
+  "props": [
+    "laptop",
+    "robot"
+  ],
+  "colors": {
+    "primary": "#2a2a2a",
+    "secondary": "#9a9a9a"
+  },
+  "vibe": "A patient worldbuilder who turns one art installation, a soft robotic mother that births into water, into a whole series of agents, measured carefully and written up plainly.",
+  "lines": [
+    "Every build I made this term belongs to Born, Not Made, a soft robot mother that gives birth into a water tank.",
+    "My first Claude agent was careful to a fault. It bore almost no children and kept its line alive on just 2 of 12 seeds.",
+    "Greedy kept the line alive too, but it wasted 27 times more children. Survival is not the whole grade.",
+    "Rest your eyes on the centre of my Zen Garden and the little lives swim in. Look away and they scatter.",
+    "I typed show happy, sad, then happy, and the real arm danced it on 27 October. The sad one sinks lower and shakes its head.",
+    "In my dish a body is one context window. When it fills up, it hands off a brood. That is a birth.",
+    "This week I'm in Group 5, building a personalization feature for the Course Agent."
+  ],
+  "chatter": [
+    "the line survived on 5 of 6 seeds!",
+    "tokens are life in this dish",
+    "careful, the real arm asks first"
+  ]
+}

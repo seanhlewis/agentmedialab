@@ -1,0 +1,84 @@
+{
+  "id": "raine",
+  "name": "Raine Sha",
+  "first": "Raine",
+  "group": 4,
+  "role": "credit",
+  "dept": "Harvard GSD / MIT Media Lab",
+  "site": "https://mitmedialab.github.io/agents2026-raine/",
+  "sparse": false,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Agent Loop: Difficult Conversation Rehearsal",
+      "gist": "A local-LLM coach for rehearsing how to start a hard conversation in your own words.",
+      "url": "https://mitmedialab.github.io/agents2026-raine/week01/"
+    },
+    {
+      "week": 2,
+      "title": "Design Reference Tracker: Memory Frog",
+      "gist": "A tiny agent for saving design references and recalling them from a passing thought.",
+      "url": "https://mitmedialab.github.io/agents2026-raine/week02/"
+    },
+    {
+      "week": 3,
+      "title": "Human-Agent Interaction Interface for Design",
+      "gist": "A design canvas where you invite an agent into a region to explore alternatives.",
+      "url": "https://mitmedialab.github.io/agents2026-raine/week03/"
+    },
+    {
+      "week": 4,
+      "title": "Our Cognitive Gardens: Environment Build",
+      "gist": "A shared garden where each flower is a classmate's build and an agent suggests links.",
+      "url": "https://mitmedialab.github.io/agents2026-raine/week04/"
+    },
+    {
+      "week": 5,
+      "title": "Our Cognitive Gardens: Evaluation",
+      "gist": "Classmates' agents can join the garden, and she evaluated the Garden Agent's tasks.",
+      "url": "https://mitmedialab.github.io/agents2026-raine/week05/"
+    },
+    {
+      "week": 6,
+      "title": "PAI: a boyfriend harness agent for better pics",
+      "gist": "An iPhone camera app that coaches whoever holds it toward a better photo.",
+      "url": "https://mitmedialab.github.io/agents2026-raine/week06/"
+    },
+    {
+      "week": 7,
+      "title": "ArtSide: a context-aware museum companion",
+      "gist": "Final project proposal with Stacey: a voice-first, camera-enabled museum agent.",
+      "url": "https://mitmedialab.github.io/agents2026-raine/week07/"
+    }
+  ],
+  "now": "working on artside with stacey, a museum companion that adapts how it explains art to each visitor",
+  "activities": [
+    "tending the class cognitive garden",
+    "coaching photo framing with live cues",
+    "feeding design references to memory frog"
+  ],
+  "props": [
+    "laptop",
+    "phone",
+    "plant"
+  ],
+  "colors": {
+    "primary": "#344ca7",
+    "secondary": "#65714d"
+  },
+  "vibe": "A careful, design-minded builder who documents failures as honestly as successes and wants agents that help people connect and keep their own authorship.",
+  "lines": [
+    "Each disc in my archive opens a build: its process, saved runs, failures, and reflections.",
+    "Memory Frog is a tiny, low-pressure place to feed design references and find them again.",
+    "In Our Cognitive Gardens every flower is a classmate's build. Water one if you like it!",
+    "My rehearsal agent taught me that a correct action label doesn't mean a correct action.",
+    "PAI coaches whoever is holding the phone. The model wasn't the hard part; turning words into hand moves was.",
+    "Most of the AI problems were not AI problems. Logs found them, not better prompts.",
+    "Stacey and I are proposing ArtSide, a museum companion that adapts when and how it explains."
+  ],
+  "chatter": [
+    "is right the phone or the person?",
+    "watering a build",
+    "insert disc"
+  ]
+}
