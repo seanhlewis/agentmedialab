@@ -168,8 +168,8 @@
     <button data-mode="everyone" class="${mode === 'everyone' ? 'on' : ''}" ${Track.remote ? '' : 'disabled title="Set a GoatCounter code in data/config.js to count everyone"'}>EVERYONE</button>
     <button data-mode="you" class="${mode === 'you' ? 'on' : ''}">JUST YOU</button>
     <span>${note}</span>
+    ${live ? '<button data-refresh>REFRESH</button>' : ''}
   </div>
-  ${live ? '<p class="end" style="margin:0 0 6px"><button data-refresh>REFRESH</button></p>' : ''}
   ${!live && problem ? '<p class="muted">Class-wide totals could not be loaded, so this shows your own clicks in this browser. Either GoatCounter is not sharing totals yet (its <i>allow using the visitor counter</i> setting) or an ad blocker is blocking it.</p>' : ''}
   ${!Track.remote ? '<p class="muted">Class-wide counts are not connected, so this shows your own clicks in this browser.</p>' : ''}
   <div class="facts">
