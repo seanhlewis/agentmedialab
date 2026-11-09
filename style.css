@@ -1,0 +1,139 @@
+:root {
+  --ink: #1c1a2b;
+  --paper: #fbf3df;
+  --paper-2: #efe2c2;
+  --edge: #3a2f4a;
+  --accent: #e2574c;
+  --muted: #7d6f8a;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #14121f; color: var(--paper); overflow: hidden; }
+body { font-family: 'VT323', monospace; }
+button { font: inherit; }
+
+#stage { position: fixed; inset: 0; display: grid; place-items: center; }
+#world {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  display: block;
+  cursor: default;
+  box-shadow: 0 0 0 4px #0a0912, 0 0 0 8px #2a2440, 0 20px 60px rgba(0,0,0,.6);
+}
+#overlay { position: absolute; inset: 0; pointer-events: none; }
+
+/* Pixel frame: hard stepped corners made from box-shadows */
+.px {
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow:
+    0 -4px 0 0 var(--edge), 0 4px 0 0 var(--edge),
+    -4px 0 0 0 var(--edge), 4px 0 0 0 var(--edge),
+    0 8px 0 0 rgba(0,0,0,.35);
+}
+
+#hud {
+  position: fixed; top: 12px; left: 12px; right: 12px;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  pointer-events: none;
+  font-family: 'Press Start 2P', monospace; font-size: 10px; letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000;
+}
+#hud .title span { color: #f2c14e; }
+#hud .clock { color: #bfe3ff; }
+#hud .controls { display: flex; gap: 8px; pointer-events: auto; }
+#hud button {
+  font-family: 'Press Start 2P', monospace; font-size: 9px;
+  background: #2a2440; color: var(--paper); border: 0; padding: 7px 9px; cursor: pointer;
+  box-shadow: 0 -2px 0 #4b4170, 0 2px 0 #0a0912, -2px 0 0 #4b4170, 2px 0 0 #0a0912;
+}
+#hud button:hover { background: #3a3258; }
+#hud button:active { transform: translateY(1px); }
+
+#hint {
+  position: fixed; bottom: 14px; left: 50%; transform: translateX(-50%);
+  font-family: 'Press Start 2P', monospace; font-size: 9px; color: #cfc6e6;
+  text-shadow: 2px 2px 0 #000; white-space: nowrap; pointer-events: none;
+  animation: blink 2.4s steps(2) infinite;
+}
+@keyframes blink { 50% { opacity: .55; } }
+
+#tip {
+  position: fixed; pointer-events: none; z-index: 5;
+  font-family: 'VT323', monospace; font-size: 18px; line-height: 1;
+  padding: 5px 8px 6px; background: #1c1a2b; color: var(--paper);
+  box-shadow: 0 -2px 0 #f2c14e, 0 2px 0 #f2c14e, -2px 0 0 #f2c14e, 2px 0 0 #f2c14e;
+  white-space: nowrap; transform: translate(-50%, -100%);
+}
+#tip b { font-family: 'Press Start 2P', monospace; font-size: 8px; font-weight: normal; color: #f2c14e; display: block; margin-bottom: 3px; }
+
+/* Chat bubble */
+.bubble {
+  position: absolute; z-index: 4; pointer-events: auto; cursor: pointer;
+  width: min(340px, 80vw); padding: 10px 12px 12px;
+  transform: translate(-50%, calc(-100% - 14px));
+}
+.bubble::after { /* pixel tail */
+  content: ''; position: absolute; left: 50%; bottom: -16px; width: 8px; height: 8px; margin-left: -4px;
+  background: var(--paper);
+  box-shadow: 0 4px 0 var(--edge), -4px 0 0 var(--edge), 4px 0 0 var(--edge), 0 8px 0 rgba(0,0,0,.35);
+}
+.bubble .hd { font-family: 'Press Start 2P', monospace; font-size: 9px; margin-bottom: 7px; display: flex; justify-content: space-between; gap: 8px; }
+.bubble .hd i { font-style: normal; color: var(--muted); }
+.bubble .tx { font-size: 21px; line-height: 1.05; min-height: 44px; white-space: pre-wrap; }
+.bubble .nx { position: absolute; right: 10px; bottom: 6px; font-family: 'Press Start 2P', monospace; font-size: 8px; color: var(--accent); animation: bob .6s steps(2) infinite; }
+@keyframes bob { 50% { transform: translateY(2px); } }
+
+/* Ambient chatter between tablemates */
+.chat {
+  position: absolute; z-index: 3; pointer-events: none;
+  font-size: 15px; line-height: 1; padding: 3px 6px 4px; max-width: 170px;
+  background: #fffaf0; color: var(--ink);
+  box-shadow: 0 -2px 0 var(--edge), 0 2px 0 var(--edge), -2px 0 0 var(--edge), 2px 0 0 var(--edge);
+  transform: translate(-50%, calc(-100% - 8px));
+  animation: pop .18s steps(3);
+}
+@keyframes pop { from { transform: translate(-50%, calc(-100% - 2px)) scale(.6); } }
+
+/* Inspector */
+#panel {
+  position: fixed; top: 48px; right: 14px; bottom: 44px; width: 290px; z-index: 6;
+  padding: 14px 14px 12px; overflow-y: auto;
+  font-size: 18px; line-height: 1.05;
+}
+#panel[hidden] { display: none; }
+#panel #close {
+  position: absolute; top: 6px; right: 8px; border: 0; background: none; cursor: pointer;
+  font-family: 'Press Start 2P', monospace; font-size: 14px; color: var(--edge);
+}
+#panel .who { display: flex; gap: 12px; align-items: center; margin-bottom: 10px; }
+#portrait { width: 80px; height: 96px; image-rendering: pixelated; background: var(--paper-2); box-shadow: 0 0 0 3px var(--edge); }
+#panel .name { font-family: 'Press Start 2P', monospace; font-size: 10px; line-height: 1.5; }
+#panel .meta { color: var(--muted); margin-top: 4px; }
+#panel .row { display: grid; grid-template-columns: 46px 1fr; gap: 6px; margin: 6px 0; }
+#panel .row b { font-family: 'Press Start 2P', monospace; font-size: 7px; font-weight: normal; color: var(--accent); padding-top: 4px; }
+#panel h3 { font-family: 'Press Start 2P', monospace; font-size: 8px; font-weight: normal; margin: 14px 0 6px; color: var(--edge); border-bottom: 2px dotted var(--muted); padding-bottom: 4px; }
+#panel ul { list-style: none; margin: 0; padding: 0; }
+#panel li { margin: 0 0 5px; }
+#panel li .wk { font-family: 'Press Start 2P', monospace; font-size: 7px; color: var(--muted); margin-right: 4px; }
+#panel .mem li { font-size: 16px; color: #3b3450; }
+#panel .mem li .t { color: var(--muted); margin-right: 4px; }
+#panel .mem li.new { animation: flash 1s steps(4); }
+@keyframes flash { from { background: #f2c14e; } }
+#p-site {
+  display: inline-block; margin-top: 12px; font-family: 'Press Start 2P', monospace; font-size: 8px;
+  color: var(--paper); background: var(--accent); padding: 7px 9px; text-decoration: none;
+  box-shadow: 0 3px 0 #8f2e27;
+}
+
+@media (max-width: 720px) {
+  #hud { font-size: 8px; display: grid; grid-template-columns: 1fr auto; row-gap: 8px; }
+  #hud .title { grid-column: 1; grid-row: 1; white-space: nowrap; }
+  #hud .clock { grid-column: 1; grid-row: 2; white-space: nowrap; }
+  #hud .controls { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
+  #hud .title span, #hint { display: none; }
+  #panel { top: auto; left: 8px; right: 8px; bottom: 8px; width: auto; max-height: 46vh; }
+}
+@media (max-width: 720px) and (orientation: portrait) {
+  /* keep the room above the bottom-sheet panel instead of centred behind it */
+  #stage { place-items: start center; padding-top: 76px; }
+}

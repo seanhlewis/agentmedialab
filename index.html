@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="world" width="640" height="360"></canvas>
+  <div id="overlay"></div>
+</div>
+
+<header id="hud">
+  <div class="title">COGNITIVE AGENTS <span>· STUDIO</span></div>
+  <div class="clock" id="clock">SUN NOV 8 · 2:30 PM</div>
+  <div class="controls">
+    <button id="pause" title="Pause (P)">II</button>
+    <button id="speed" title="Speed (S)">1x</button>
+    <button id="sound" title="Sound (M)">♪ ON</button>
+  </div>
+</header>
+
+<div id="hint">Click anyone to see what they're working on · click the whiteboard for the brief</div>
+<div id="tip" hidden></div>
+
+<aside id="panel" class="px" hidden>
+  <button id="close" title="Close (Esc)">×</button>
+  <div class="who">
+    <canvas id="portrait" width="20" height="24"></canvas>
+    <div>
+      <div id="p-name" class="name"></div>
+      <div id="p-meta" class="meta"></div>
+    </div>
+  </div>
+  <div class="row"><b>NOW</b><span id="p-now"></span></div>
+  <div class="row"><b>VIBE</b><span id="p-vibe"></span></div>
+  <h3>BUILDS</h3>
+  <ul id="p-weeks"></ul>
+  <h3>MEMORY STREAM</h3>
+  <ul id="p-mem" class="mem"></ul>
+  <a id="p-site" target="_blank" rel="noopener">VISIT SITE ↗</a>
+</aside>
+
+<script src="data/people.js"></script>
+<script src="data/extra.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

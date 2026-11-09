@@ -1,0 +1,35 @@
+// Sean is not in the researched list (it's his own site), so his entry lives here.
+window.EXTRA_PEOPLE = [
+  {
+    id: 'sean', name: 'Sean Hardesty Lewis', first: 'Sean', group: 4,
+    dept: 'MIT DUSP / Center for Real Estate', site: 'https://mitmedialab.github.io/agents2026-sean/',
+    sparse: false,
+    weeks: [
+      { week: 1, title: 'Agent from Scratch', gist: 'A text dungeon an LLM escapes through a plain observe-act loop.' },
+      { week: 2, title: '3D Viewing Agent', gist: 'An agent that picks camera views of Aincrad and remembers what it saw.' },
+      { week: 3, title: 'Tough-Love Tutor', gist: 'A tutor that withholds help until you have genuinely tried.' },
+      { week: 4, title: 'A Minecraft Environment for Agents', gist: 'MARM turned into an environment: 18 tasks, 62 of 62 rules match the wiki.' },
+      { week: 5, title: 'Evaluating the Copilot', gist: '54 runs with Langfuse, pass@k and an LLM judge.' },
+      { week: 6, title: 'A Robot That Listens', gist: 'A Sphero Ollie run by an LLM through a 13-tool MCP server.' },
+    ],
+    now: 'teaching a Sphero to nod at the right time',
+    activities: ['calibrating head shakes', 'reading robot logs', 'sitting in with Group 4'],
+    props: ['robot', 'laptop'],
+    colors: { primary: '#2f5fbf', secondary: '#f2c14e' },
+    vibe: 'Builds the whole world before letting the agent in, then grades it on its own logs.',
+    lines: [
+      "Hey! This little guy is a Sphero Ollie. An LLM drives it through MCP, and it nods or shakes its head at me.",
+      "Fun fact: the Ollie can't turn while it's standing still. I learned that by watching it fail. A lot.",
+      "My first prompt said 'don't drive if the camera is bad.' The agent heard 'do nothing.' 7 of 15 runs, zero actions.",
+      "Weeks 4 and 5 I turned my Minecraft-style game MARM into an agent environment. 62 of 62 rules match the wiki.",
+      "Week 3 was a tutor that won't help until you've genuinely tried. Tough love, but kind.",
+      "This week I'm in Group 4 with David, Egemen and Raine, personalizing the Course Agent.",
+      "Final project dream: an agent that models the person, not the task. Where are you confidently wrong?",
+    ],
+    chatter: ['it shook its head at me again', 'pass@k or pass^k?', 'anyone seen the robot charger?'],
+  },
+];
+
+// Optional per-person look overrides, e.g. { sean: { hair: 'short', hairColor: '#3a2418', glasses: true } }.
+// Keys: skin, hair (short|long|bob|bun|curly|ponytail|buzz|spiky|beanie|cap), hairColor, glasses, pants.
+window.LOOKS = Object.assign(window.LOOKS || {}, {});
