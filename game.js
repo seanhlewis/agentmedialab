@@ -600,6 +600,7 @@ class Agent {
   sit(T, seat) { this.table = T; this.seat = seat; this.state = 'seated'; this.x = seat.x; this.y = seat.y; this.dir = seat.dir; this.breakT = rnd(25, 160); }
   wander(first) {
     const keys = Object.keys(POIS).filter((k) => POIS[k].slots.some((s) => !taken.has(s)));
+    if (!keys.length) return this.visit(true); // every standing spot is taken: drop by a table instead
     const wts = keys.map((k) => POIS[k].w * (this.seat ? 1 : k === 'couch' || k === 'bean' ? 3 : 1) * (/fab|robot|hardware|soft|fabric/i.test(JSON.stringify(this.P.activities) + this.P.now) && k === 'fab' ? 4 : 1));
     let r = Math.random() * wts.reduce((a, b) => a + b, 0), k = keys[0];
     for (let i = 0; i < keys.length; i++) { r -= wts[i]; if (r <= 0) { k = keys[i]; break; } }
@@ -608,9 +609,15 @@ class Agent {
     if (first) { this.x = slot[0]; this.y = slot[1]; this.slot = slot; this.goal = { kind: 'poi', poi }; this.arrive(true); return; }
     this.go({ kind: 'poi', poi }, slot);
   }
-  visit() {
+  visit(fromWander) {
     const hosts = agents.filter((a) => a !== this && a.state === 'seated' && a.seat.kind === 'top' && a.table !== this.table && !agents.some((b) => b.goal && b.goal.host === a));
-    if (!hosts.length) return this.wander();
+    if (!hosts.length) {
+      if (!fromWander) return this.wander();
+      // nowhere free at all: linger where you are for a moment, then try again
+      this.slot = null; this.state = 'at'; this.dir = 'down'; this.stayT = rnd(4, 9);
+      this.goal = { kind: 'poi', poi: { label: 'the room', verb: 'looking around the room', face: 'down' } };
+      return;
+    }
     const host = pick(hosts);
     this.go({ kind: 'visit', host, poi: { label: `${host.name}'s table`, verb: `checking in with ${host.name}`, face: 'down' } }, [host.seat.x + (Math.random() < 0.5 ? -9 : 9), host.table.ty - 4]);
   }

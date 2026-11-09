@@ -1,0 +1,47 @@
+{
+  "id": "fatak",
+  "name": "Fatak Borhani",
+  "first": "Fatak",
+  "group": null,
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-fatak/",
+  "sparse": false,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "CO2 Scrubber Agent for the International Space Station",
+      "gist": "A local LLM runs a simulated ISS CO2 scrubber and must doubt a sensor that drifts low.",
+      "url": "https://mitmedialab.github.io/agents2026-fatak/weeks/week01.html"
+    }
+  ],
+  "now": "exploring final project ideas on agents for space travel and critical thinking",
+  "activities": [
+    "swapping scrubber beds in simulation",
+    "cross-checking a backup sensor",
+    "sketching agents for long space missions"
+  ],
+  "props": [
+    "laptop",
+    "globe",
+    "books"
+  ],
+  "colors": {
+    "primary": "#396588",
+    "secondary": "#d0342c"
+  },
+  "vibe": "Brings a safety-critical, space-systems mindset to agents, and opens with Magritte's mirror to ask what agents should be.",
+  "lines": [
+    "Week 1 I handed an ISS CO2 scrubber to a local LLM. It has to keep the cabin below 4.0 mmHg for four hours.",
+    "The primary sensor can drift low, so a healthy-looking reading isn't automatically true.",
+    "I tell the agent the crew reports headaches and drowsiness. A good agent should get suspicious and read the backup.",
+    "Every action, even a sensor read, costs one five-minute tick. No free looks.",
+    "A single run takes well over ten minutes right now. I'm working on bringing that down.",
+    "My home page starts with Magritte's mirror. Are agents extensions of ourselves, or replacements?",
+    "My proposals are all over the map: wearable AI for critical thinking, and agents for health and wellbeing in space."
+  ],
+  "chatter": [
+    "check the backup sensor",
+    "still under 4.0 mmHg",
+    "in due time"
+  ]
+}

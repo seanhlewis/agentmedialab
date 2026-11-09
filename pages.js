@@ -84,7 +84,7 @@
 
   <h2>What's in the room</h2>
   <div class="facts">
-    <div><b>${people.length}</b><span>classmates, seated at their ${groups} week-8 tables</span></div>
+    <div><b>${people.length}</b><span>classmates: ${people.filter((p) => p.group).length} at the ${groups} week-8 tables, the rest moving around the room</span></div>
     <div><b>${builds}</b><span>builds, each with its own one-line summary</span></div>
     <div><b>${linked}</b><span>builds link straight to their write-up</span></div>
     <div><b>${S.gardenBuilds || 0}</b><span>cross-checked against Raine's source-reviewed catalog</span></div>
@@ -95,31 +95,53 @@
   <p>Builds are merged with <a href="https://github.com/rainscyy/MyGarden4.0" target="_blank" rel="noopener" data-ev="out/mygarden">Raine's Our Cognitive Gardens catalog</a> (${S.snapshot ? S.snapshot.builds : 71} source-reviewed builds, MIT License), which adds each build's source link and themes, plus the pairs her Garden Agent recorded. The research for each person is public in <a href="https://github.com/seanhlewis/agentmedialab/tree/main/research" target="_blank" rel="noopener" data-ev="out/research">research/</a>. If something about you is wrong, open an issue or a pull request.</p>
 
   <h2>What gets counted</h2>
-  <p>To learn whether the room helps, it counts anonymous clicks: which person, table or build was opened and whether someone went on to the write-up. No cookies, names, IP addresses or accounts are stored. ${Track.remote ? 'Class-wide totals go to GoatCounter, an open-source, privacy-friendly counter, and are copied into a plain file in the repo a few times a day.' : 'For now, counts stay in your own browser.'} Your own tally is always visible under Stats → Just you.</p>
+  <p>To learn whether the room helps, it counts anonymous clicks: which person, table or build was opened and whether someone went on to the write-up. No cookies, names, IP addresses or accounts are stored. ${Track.remote ? 'Class-wide totals are kept by <a href="https://www.goatcounter.com" target="_blank" rel="noopener">GoatCounter</a>, an open-source, privacy-friendly counter, and the Stats tab reads them back live. There is no database behind this site.' : 'For now, counts stay in your own browser.'} Your own tally is always visible under Stats → Just you.</p>
 
   <p class="end"><button data-go="raine">Meet Raine in the room ▸</button></p>
 </article>`;
   }
 
   // ------------------------------------------------------------ stats
-  let mode = null, sortKey = 'opens', everyone = null, loaded = false;
+  let mode = null, sortKey = 'opens', everyone = null, loading = null, problem = null;
+  function livePaths() {
+    const ids = P().map((p) => p.id);
+    const groups = [...new Set(P().map((p) => p.group).filter(Boolean))];
+    return [...ids.flatMap((id) => [`person/${id}`, `work/${id}`, `via/${id}`]), ...groups.map((g) => `table/${g}`),
+      'board', 'pinboard', 'tab/why', 'tab/stats', 'out/raine-week4', 'out/research'];
+  }
+  async function loadEveryone(force) {
+    if (!Track.remote) return;
+    if (force) { try { sessionStorage.removeItem(`studio.everyone.v1.${Track.code}`); } catch (e) { /* ignore */ } }
+    loading = Track.everyone(livePaths());
+    const r = await loading; loading = null;
+    if (r && !r.error) { everyone = r; problem = null; } else { everyone = null; problem = r ? r.error : 'unreachable'; }
+    if (mode === 'everyone' && !everyone) mode = 'you';
+  }
   async function renderStats() {
-    if (!loaded) { loaded = true; everyone = await Track.everyone(); if (!mode) mode = everyone ? 'everyone' : 'you'; }
-    mode ||= 'you';
+    if (mode === null) {
+      mode = Track.remote ? 'everyone' : 'you';
+      if (Track.remote) {
+        $('page-stats').innerHTML = '<article class="doc wide"><p class="kicker">STATS</p><h1>Counting the class&hellip;</h1><p class="muted">Fetching live totals from GoatCounter.</p></article>';
+        await loadEveryone();
+      }
+    }
     const src = mode === 'everyone' && everyone ? everyone : { views: Track.mine().views, events: Track.mine().events, updated: null };
+    const live = mode === 'everyone';
     const ev = src.events || {}, views = Math.max(1, src.views || 0);
     const get = (k) => ev[k] || 0;
     const people = P();
     const rows = people.map((p) => {
       const builds = Object.keys(ev).filter((k) => k.startsWith(`build/${p.id}/`)).reduce((n, k) => n + ev[k], 0);
-      const opens = get(`person/${p.id}`), work = get(`site/${p.id}`) + builds;
-      const cross = Object.keys(ev).filter((k) => (k.startsWith('related/') || k.startsWith('pair/')) && k.endsWith(`/${p.id}`)).reduce((n, k) => n + ev[k], 0);
+      const opens = get(`person/${p.id}`);
+      const work = Math.max(get(`work/${p.id}`), get(`site/${p.id}`) + builds);
+      const viaRaw = Object.keys(ev).filter((k) => (k.startsWith('related/') || k.startsWith('pair/')) && k.endsWith(`/${p.id}`)).reduce((n, k) => n + ev[k], 0);
+      const cross = Math.max(get(`via/${p.id}`), viaRaw);
       return { p, opens, ctr: opens / views, work, wctr: opens ? work / opens : 0, cross };
     });
     const sorters = { opens: (r) => r.opens, ctr: (r) => r.ctr, work: (r) => r.work, wctr: (r) => r.wctr, cross: (r) => r.cross, name: (r) => r.p.name };
     rows.sort((a, b) => (sortKey === 'name' ? a.p.name.localeCompare(b.p.name) : sorters[sortKey](b) - sorters[sortKey](a) || a.p.name.localeCompare(b.p.name)));
     const opensTotal = rows.reduce((n, r) => n + r.opens, 0), workTotal = rows.reduce((n, r) => n + r.work, 0);
-    const crossTotal = Object.keys(ev).filter((k) => k.startsWith('related/') || k.startsWith('pair/')).reduce((n, k) => n + ev[k], 0);
+    const crossTotal = rows.reduce((n, r) => n + r.cross, 0);
     const maxOpen = Math.max(1, ...rows.map((r) => r.opens));
     const pct = (x) => `${(x * 100).toFixed(x > 0 && x < 0.1 ? 1 : 0)}%`;
 
@@ -135,19 +157,21 @@
     const other = [['Whiteboard', get('board')], ['Pinboard', get('pinboard')], ['Why tab', get('tab/why')], ['Stats tab', get('tab/stats')], ['Raine\'s week 4 (from Why)', get('out/raine-week4')], ['Research folder', get('out/research')]];
 
     const th = (k, label) => `<th><button class="${sortKey === k ? 'on' : ''}" data-sort="${k}">${label}${sortKey === k ? ' <span class="ar">▾</span>' : ''}</button></th>`;
-    const note = mode === 'everyone'
-      ? `Everyone · since ${esc(src.since || '?')} · updated ${esc(src.updated || '?')}`
+    const note = live
+      ? `Everyone · live from GoatCounter · fetched ${esc(src.updated || '?')} UTC`
       : `Just you · this browser only · since ${new Date(Track.mine().first).toLocaleDateString()}`;
     $('page-stats').innerHTML = `
 <article class="doc wide">
   <p class="kicker">STATS</p>
   <h1>Who gets opened, and does it lead anywhere?</h1>
   <div class="seg">
-    <button data-mode="everyone" class="${mode === 'everyone' ? 'on' : ''}" ${everyone ? '' : 'disabled title="Class-wide counts appear once the GoatCounter collector is connected (see data/config.js)"'}>EVERYONE</button>
+    <button data-mode="everyone" class="${mode === 'everyone' ? 'on' : ''}" ${Track.remote ? '' : 'disabled title="Set a GoatCounter code in data/config.js to count everyone"'}>EVERYONE</button>
     <button data-mode="you" class="${mode === 'you' ? 'on' : ''}">JUST YOU</button>
     <span>${note}</span>
   </div>
-  ${!everyone ? '<p class="muted">Class-wide counts are not connected yet, so this shows your own clicks in this browser. Open a few people in the Studio tab and come back.</p>' : ''}
+  ${live ? '<p class="end" style="margin:0 0 6px"><button data-refresh>REFRESH</button></p>' : ''}
+  ${!live && problem ? '<p class="muted">Class-wide totals could not be loaded, so this shows your own clicks in this browser. Either GoatCounter is not sharing totals yet (its <i>allow using the visitor counter</i> setting) or an ad blocker is blocking it.</p>' : ''}
+  ${!Track.remote ? '<p class="muted">Class-wide counts are not connected, so this shows your own clicks in this browser.</p>' : ''}
   <div class="facts">
     <div><b>${src.views || 0}</b><span>room visits</span></div>
     <div><b>${opensTotal}</b><span>people opened</span></div>
@@ -179,7 +203,12 @@
   $('page-stats').addEventListener('click', (e) => {
     const b = e.target.closest('button'); if (!b) return;
     if (b.dataset.sort) { sortKey = b.dataset.sort; renderStats(); }
-    if (b.dataset.mode && !b.disabled) { mode = b.dataset.mode; renderStats(); }
+    if (b.dataset.mode && !b.disabled) {
+      mode = b.dataset.mode;
+      if (mode === 'everyone' && !everyone) { b.textContent = 'LOADING'; loadEveryone(true).then(() => { if (!everyone) mode = 'you'; renderStats(); }); return; }
+      renderStats();
+    }
+    if (b.dataset.refresh !== undefined) { b.textContent = 'LOADING'; loadEveryone(true).then(renderStats); }
     if (b.dataset.reset !== undefined) { Track.reset(); renderStats(); }
     if (b.dataset.csv !== undefined) {
       const src = mode === 'everyone' && everyone ? everyone.events : Track.mine().events;

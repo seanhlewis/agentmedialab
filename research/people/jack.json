@@ -1,0 +1,46 @@
+{
+  "id": "jack",
+  "name": "Jack King",
+  "first": "Jack",
+  "group": null,
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-jack/",
+  "sparse": false,
+  "weeks": [
+    {
+      "week": 1,
+      "title": "RollWorld",
+      "gist": "A local 4B model builds ramps and springs to guide a rolling ball. It did not solve the level.",
+      "url": "https://mitmedialab.github.io/agents2026-jack/weeks/week-01.html"
+    }
+  ],
+  "now": "weighing final project directions, starting with where in-context learning runs out",
+  "activities": [
+    "placing ramps and springs on a grid",
+    "reading ball trajectories",
+    "stress-testing in-context learning"
+  ],
+  "props": [
+    "laptop",
+    "books"
+  ],
+  "colors": {
+    "primary": "#E03A22",
+    "secondary": "#0D0D0C"
+  },
+  "vibe": "Studies brains and wants agents that learn quickly and continuously, and reports a failed run as plainly as a good one.",
+  "lines": [
+    "I study brains. I'd like agents that learn rapidly and continuously, the way brains seem to.",
+    "RollWorld: a 32 by 14 grid, one ball, and an agent building ramps and springs. It did not solve the level.",
+    "Four runs, 106 model calls. The best arc reached the checkpoint's height and missed by three columns.",
+    "I gave it a place action and it stacked six blocks right under the checkpoint. Not where the ball goes.",
+    "It can write its own actions now. It reproduces the abstraction it's shown. It doesn't find one.",
+    "Seventeen deliberate escape attempts, all rejected by the skill whitelist tests.",
+    "Next idea: find exactly where in-context learning runs out across many sessions."
+  ],
+  "chatter": [
+    "missed by three columns",
+    "a bigger model next",
+    "single runs are noise"
+  ]
+}

@@ -440,7 +440,7 @@ window.PEOPLE = [
   ],
   "related": [
    {
-    "id": "maya",
+    "id": "quincy",
     "shared": [
      "Reflection"
     ]
@@ -452,7 +452,7 @@ window.PEOPLE = [
     ]
    },
    {
-    "id": "juan",
+    "id": "maya",
     "shared": [
      "Reflection"
     ]
@@ -538,19 +538,19 @@ window.PEOPLE = [
   ],
   "related": [
    {
+    "id": "fatak",
+    "shared": [
+     "Environments"
+    ]
+   },
+   {
+    "id": "jack",
+    "shared": [
+     "Environments"
+    ]
+   },
+   {
     "id": "sean",
-    "shared": [
-     "Environments"
-    ]
-   },
-   {
-    "id": "david",
-    "shared": [
-     "Environments"
-    ]
-   },
-   {
-    "id": "manasi",
     "shared": [
      "Environments"
     ]
@@ -674,19 +674,19 @@ window.PEOPLE = [
   ],
   "related": [
    {
-    "id": "egemen",
-    "shared": [
-     "Attention",
-     "Reflection",
-     "Memory"
-    ]
-   },
-   {
     "id": "manasi",
     "shared": [
      "Attention",
      "Reflection",
      "Environments"
+    ]
+   },
+   {
+    "id": "egemen",
+    "shared": [
+     "Attention",
+     "Reflection",
+     "Memory"
     ]
    },
    {
@@ -832,19 +832,19 @@ window.PEOPLE = [
     ]
    },
    {
-    "id": "ruipeng",
-    "shared": [
-     "Environments",
-     "Social connection",
-     "Attention"
-    ]
-   },
-   {
     "id": "david",
     "shared": [
      "Learning",
      "Environments",
      "Creativity"
+    ]
+   },
+   {
+    "id": "ruipeng",
+    "shared": [
+     "Environments",
+     "Social connection",
+     "Attention"
     ]
    }
   ]
@@ -954,7 +954,7 @@ window.PEOPLE = [
   ],
   "related": [
    {
-    "id": "hyung",
+    "id": "lilith",
     "shared": [
      "Environments",
      "Learning",
@@ -962,7 +962,7 @@ window.PEOPLE = [
     ]
    },
    {
-    "id": "lilith",
+    "id": "hyung",
     "shared": [
      "Environments",
      "Learning",
@@ -1298,9 +1298,10 @@ window.PEOPLE = [
     ]
    },
    {
-    "id": "ray",
+    "id": "juan",
     "shared": [
-     "Learning",
+     "Environments",
+     "Attention",
      "Memory"
     ]
    }
@@ -1437,11 +1438,10 @@ window.PEOPLE = [
     ]
    },
    {
-    "id": "juan",
+    "id": "quincy",
     "shared": [
-     "Attention",
      "Reflection",
-     "Environments"
+     "Creativity"
     ]
    }
   ]
@@ -1541,16 +1541,16 @@ window.PEOPLE = [
     ]
    },
    {
-    "id": "jad",
+    "id": "david",
     "shared": [
-     "Reflection",
      "Environments",
      "Learning"
     ]
    },
    {
-    "id": "david",
+    "id": "jad",
     "shared": [
+     "Reflection",
      "Environments",
      "Learning"
     ]
@@ -1838,19 +1838,19 @@ window.PEOPLE = [
   ],
   "related": [
    {
-    "id": "ruipeng",
-    "shared": [
-     "Environments",
-     "Social connection",
-     "Attention"
-    ]
-   },
-   {
     "id": "juan",
     "shared": [
      "Reflection",
      "Environments",
      "Memory"
+    ]
+   },
+   {
+    "id": "ruipeng",
+    "shared": [
+     "Environments",
+     "Social connection",
+     "Attention"
     ]
    },
    {
@@ -2150,9 +2150,10 @@ window.PEOPLE = [
     ]
    },
    {
-    "id": "mateo",
+    "id": "hyung",
     "shared": [
-     "Environments"
+     "Environments",
+     "Learning"
     ]
    }
   ]
@@ -2400,7 +2401,7 @@ window.PEOPLE = [
   ],
   "related": [
    {
-    "id": "roma",
+    "id": "juan",
     "shared": [
      "Reflection",
      "Attention",
@@ -2408,7 +2409,7 @@ window.PEOPLE = [
     ]
    },
    {
-    "id": "juan",
+    "id": "roma",
     "shared": [
      "Reflection",
      "Attention",
@@ -2948,7 +2949,7 @@ window.PEOPLE = [
   ],
   "related": [
    {
-    "id": "raine",
+    "id": "jad",
     "shared": [
      "Memory",
      "Reflection",
@@ -2956,7 +2957,7 @@ window.PEOPLE = [
     ]
    },
    {
-    "id": "jad",
+    "id": "raine",
     "shared": [
      "Memory",
      "Reflection",
@@ -3127,7 +3128,459 @@ window.PEOPLE = [
   ],
   "themes": [],
   "related": []
+ },
+ {
+  "id": "fatak",
+  "name": "Fatak Borhani",
+  "first": "Fatak",
+  "group": null,
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-fatak/",
+  "sparse": false,
+  "weeks": [
+   {
+    "week": 1,
+    "title": "CO2 Scrubber Agent for the International Space Station",
+    "gist": "A local LLM runs a simulated ISS CO2 scrubber and must doubt a sensor that drifts low.",
+    "url": "https://mitmedialab.github.io/agents2026-fatak/weeks/week01.html",
+    "themes": [
+     "Environments"
+    ],
+    "methods": [
+     "Agent loop",
+     "Python",
+     "Simulation"
+    ],
+    "garden": true
+   }
+  ],
+  "now": "exploring final project ideas on agents for space travel and critical thinking",
+  "activities": [
+   "swapping scrubber beds in simulation",
+   "cross-checking a backup sensor",
+   "sketching agents for long space missions"
+  ],
+  "props": [
+   "laptop",
+   "globe",
+   "books"
+  ],
+  "colors": {
+   "primary": "#396588",
+   "secondary": "#d0342c"
+  },
+  "vibe": "Brings a safety-critical, space-systems mindset to agents, and opens with Magritte's mirror to ask what agents should be.",
+  "lines": [
+   "Week 1 I handed an ISS CO2 scrubber to a local LLM. It has to keep the cabin below 4.0 mmHg for four hours.",
+   "The primary sensor can drift low, so a healthy-looking reading isn't automatically true.",
+   "I tell the agent the crew reports headaches and drowsiness. A good agent should get suspicious and read the backup.",
+   "Every action, even a sensor read, costs one five-minute tick. No free looks.",
+   "A single run takes well over ten minutes right now. I'm working on bringing that down.",
+   "My home page starts with Magritte's mirror. Are agents extensions of ourselves, or replacements?",
+   "My proposals are all over the map: wearable AI for critical thinking, and agents for health and wellbeing in space."
+  ],
+  "chatter": [
+   "check the backup sensor",
+   "still under 4.0 mmHg",
+   "in due time"
+  ],
+  "themes": [
+   "Environments"
+  ],
+  "related": [
+   {
+    "id": "jack",
+    "shared": [
+     "Environments"
+    ]
+   },
+   {
+    "id": "mateo",
+    "shared": [
+     "Environments"
+    ]
+   },
+   {
+    "id": "sean",
+    "shared": [
+     "Environments"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "jack",
+  "name": "Jack King",
+  "first": "Jack",
+  "group": null,
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-jack/",
+  "sparse": false,
+  "weeks": [
+   {
+    "week": 1,
+    "title": "RollWorld",
+    "gist": "A local 4B model builds ramps and springs to guide a rolling ball. It did not solve the level.",
+    "url": "https://mitmedialab.github.io/agents2026-jack/weeks/week-01.html",
+    "themes": [
+     "Environments"
+    ],
+    "methods": [
+     "Qwen",
+     "agent loop",
+     "physics simulation"
+    ],
+    "garden": true
+   }
+  ],
+  "now": "weighing final project directions, starting with where in-context learning runs out",
+  "activities": [
+   "placing ramps and springs on a grid",
+   "reading ball trajectories",
+   "stress-testing in-context learning"
+  ],
+  "props": [
+   "laptop",
+   "books"
+  ],
+  "colors": {
+   "primary": "#E03A22",
+   "secondary": "#0D0D0C"
+  },
+  "vibe": "Studies brains and wants agents that learn quickly and continuously, and reports a failed run as plainly as a good one.",
+  "lines": [
+   "I study brains. I'd like agents that learn rapidly and continuously, the way brains seem to.",
+   "RollWorld: a 32 by 14 grid, one ball, and an agent building ramps and springs. It did not solve the level.",
+   "Four runs, 106 model calls. The best arc reached the checkpoint's height and missed by three columns.",
+   "I gave it a place action and it stacked six blocks right under the checkpoint. Not where the ball goes.",
+   "It can write its own actions now. It reproduces the abstraction it's shown. It doesn't find one.",
+   "Seventeen deliberate escape attempts, all rejected by the skill whitelist tests.",
+   "Next idea: find exactly where in-context learning runs out across many sessions."
+  ],
+  "chatter": [
+   "missed by three columns",
+   "a bigger model next",
+   "single runs are noise"
+  ],
+  "themes": [
+   "Environments"
+  ],
+  "related": [
+   {
+    "id": "fatak",
+    "shared": [
+     "Environments"
+    ]
+   },
+   {
+    "id": "mateo",
+    "shared": [
+     "Environments"
+    ]
+   },
+   {
+    "id": "sean",
+    "shared": [
+     "Environments"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "quincy",
+  "name": "Quincy Kuang",
+  "first": "Quincy",
+  "group": null,
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-quincy/",
+  "sparse": false,
+  "weeks": [
+   {
+    "week": 1,
+    "title": "Design Critique",
+    "gist": "A local Qwen model critiques and revises a desk lamp design against a brief.",
+    "url": "https://mitmedialab.github.io/agents2026-quincy/week01.html",
+    "themes": [
+     "Creativity",
+     "Reflection"
+    ],
+    "methods": [
+     "Qwen",
+     "agent loop"
+    ],
+    "garden": true
+   },
+   {
+    "week": 4,
+    "title": "Agentic Marble Machine",
+    "gist": "A desktop marble machine where an agent sorts messages as marbles into five trays.",
+    "url": "https://mitmedialab.github.io/agents2026-quincy/week04.html"
+   },
+   {
+    "week": 5,
+    "title": "Evaluating the Agents",
+    "gist": "16 scenarios, 3 trials: 97.9% strict accuracy, but drafts made unsupported commitments.",
+    "url": "https://mitmedialab.github.io/agents2026-quincy/week05.html"
+   },
+   {
+    "week": 6,
+    "title": "Perspective Cubes",
+    "gist": "Four Sifteo Cubes as AI personas; stacking, tapping and flipping shape who speaks.",
+    "url": "https://mitmedialab.github.io/agents2026-quincy/week06.html"
+   }
+  ],
+  "now": "exploring tangible, screenless ways to talk with agents after the perspective cubes",
+  "activities": [
+   "sorting message marbles into trays",
+   "stacking perspective cubes",
+   "checking drafts before they send"
+  ],
+  "props": [
+   "laptop",
+   "sketchbook",
+   "solder"
+  ],
+  "colors": {
+   "primary": "#111111",
+   "secondary": "#e2e2de"
+  },
+  "vibe": "Turns agents into objects you can hold, with a designer's eye and a firm rule that the agent proposes and the human decides.",
+  "lines": [
+   "In my marble machine every message is a glass marble. Drop it in a bowl and it reads aloud or drafts a reply.",
+   "The agent proposes, and I decide. Nothing sends without my approval, and the send is simulated anyway.",
+   "Week 5: 97.9% strict accuracy against a 68.8% keyword baseline, for about two cents of model calls.",
+   "Its weak spot was commitments. It kept confirming I still need after-hours lab access. Only I know that!",
+   "My Perspective Cubes stack Ishii on top of Maes. The top cube sets the agenda.",
+   "Flip a cube face-down and it leaves the table. The others talk about it behind its back.",
+   "My week 1 critic turned a six-motor robot lamp into an Eco-Light Desk Lamp. Still a bit inconsistent."
+  ],
+  "chatter": [
+   "into the empathetic bowl",
+   "flip that cube over",
+   "approve before send"
+  ],
+  "themes": [
+   "Creativity",
+   "Reflection"
+  ],
+  "related": [
+   {
+    "id": "raine",
+    "shared": [
+     "Creativity",
+     "Reflection"
+    ]
+   },
+   {
+    "id": "roma",
+    "shared": [
+     "Creativity",
+     "Reflection"
+    ]
+   },
+   {
+    "id": "stacey",
+    "shared": [
+     "Reflection"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "cate",
+  "name": "Cate",
+  "first": "Cate",
+  "group": null,
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-cate/",
+  "sparse": true,
+  "weeks": [],
+  "now": "following along with the class this term",
+  "activities": [
+   "catching the weekly demos",
+   "thinking about agents",
+   "following the class discussions"
+  ],
+  "props": [
+   "laptop",
+   "sticky_notes"
+  ],
+  "colors": {
+   "primary": "#7a5c99",
+   "secondary": "#e6dcef"
+  },
+  "vibe": "Following how the class builds and talks about agents this term.",
+  "lines": [
+   "Hi, I'm Cate! I'm in the agents class this term.",
+   "My site just says 'Welcome Cate' for now. Short and sweet.",
+   "It's fun seeing everyone's builds come together week by week.",
+   "I'm curious how agents can help people think, remember and create.",
+   "Nothing posted yet. Check back later!"
+  ],
+  "chatter": [
+   "oh, nice demo",
+   "hmm, good question",
+   "that's clever"
+  ],
+  "themes": [],
+  "related": []
+ },
+ {
+  "id": "elijah",
+  "name": "Elijah",
+  "first": "Elijah",
+  "group": null,
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-elijah/",
+  "sparse": true,
+  "weeks": [],
+  "now": "following along with the class this term",
+  "activities": [
+   "catching the weekly demos",
+   "thinking about agents",
+   "following the class discussions"
+  ],
+  "props": [
+   "laptop",
+   "mug"
+  ],
+  "colors": {
+   "primary": "#3f7f7a",
+   "secondary": "#d6ece8"
+  },
+  "vibe": "Following how the class builds and talks about agents this term.",
+  "lines": [
+   "Hi, I'm Elijah! I'm in the agents class this term.",
+   "My site just says 'Welcome Elijah' for now. Short and sweet.",
+   "It's fun seeing everyone's builds come together week by week.",
+   "I'm curious how agents can help people think, remember and create.",
+   "Nothing posted yet. Check back later!"
+  ],
+  "chatter": [
+   "oh, nice demo",
+   "hmm, good question",
+   "that's clever"
+  ],
+  "themes": [],
+  "related": []
+ },
+ {
+  "id": "eugene",
+  "name": "Eugene",
+  "first": "Eugene",
+  "group": null,
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-eugene/",
+  "sparse": true,
+  "weeks": [],
+  "now": "following along with the class this term",
+  "activities": [
+   "catching the weekly demos",
+   "thinking about agents",
+   "following the class discussions"
+  ],
+  "props": [
+   "laptop",
+   "books"
+  ],
+  "colors": {
+   "primary": "#8a6a3a",
+   "secondary": "#efe2c8"
+  },
+  "vibe": "Following how the class builds and talks about agents this term.",
+  "lines": [
+   "Hi, I'm Eugene! I'm in the agents class this term.",
+   "My site just says 'Welcome Eugene' for now. Short and sweet.",
+   "It's fun seeing everyone's builds come together week by week.",
+   "I'm curious how agents can help people think, remember and create.",
+   "Nothing posted yet. Check back later!"
+  ],
+  "chatter": [
+   "oh, nice demo",
+   "hmm, good question",
+   "that's clever"
+  ],
+  "themes": [],
+  "related": []
+ },
+ {
+  "id": "river",
+  "name": "River",
+  "first": "River",
+  "group": null,
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-river/",
+  "sparse": true,
+  "weeks": [],
+  "now": "following along with the class this term",
+  "activities": [
+   "catching the weekly demos",
+   "thinking about agents",
+   "following the class discussions"
+  ],
+  "props": [
+   "laptop",
+   "plant"
+  ],
+  "colors": {
+   "primary": "#3b6fa0",
+   "secondary": "#d4e4f2"
+  },
+  "vibe": "Following how the class builds and talks about agents this term.",
+  "lines": [
+   "Hi, I'm River! I'm in the agents class this term.",
+   "My site just says 'Welcome River' for now. Short and sweet.",
+   "It's fun seeing everyone's builds come together week by week.",
+   "I'm curious how agents can help people think, remember and create.",
+   "Nothing posted yet. Check back later!"
+  ],
+  "chatter": [
+   "oh, nice demo",
+   "hmm, good question",
+   "that's clever"
+  ],
+  "themes": [],
+  "related": []
+ },
+ {
+  "id": "yui",
+  "name": "Yui",
+  "first": "Yui",
+  "group": null,
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-yui/",
+  "sparse": true,
+  "weeks": [],
+  "now": "following along with the class this term",
+  "activities": [
+   "catching the weekly demos",
+   "thinking about agents",
+   "following the class discussions"
+  ],
+  "props": [
+   "laptop",
+   "sketchbook"
+  ],
+  "colors": {
+   "primary": "#b5506a",
+   "secondary": "#f4d9e0"
+  },
+  "vibe": "Following how the class builds and talks about agents this term.",
+  "lines": [
+   "Hi, I'm Yui! I'm in the agents class this term.",
+   "My site just says 'Welcome Yui' for now. Short and sweet.",
+   "It's fun seeing everyone's builds come together week by week.",
+   "I'm curious how agents can help people think, remember and create.",
+   "Nothing posted yet. Check back later!"
+  ],
+  "chatter": [
+   "oh, nice demo",
+   "hmm, good question",
+   "that's clever"
+  ],
+  "themes": [],
+  "related": []
  }
 ];
 window.LOOKS = Object.assign(window.LOOKS || {}, {});
-window.STUDIO = {"people": 28, "builds": 126, "withBuilds": 21, "gardenBuilds": 68, "themes": [["Environments", 22], ["Learning", 17], ["Reflection", 17], ["Attention", 14], ["Memory", 13], ["Creativity", 12], ["Social connection", 6]], "groups": [1, 2, 3, 4, 5, 6], "snapshot": {"source": "https://github.com/rainscyy/MyGarden4.0/blob/main/public/course-snapshot.json", "author": "Raine Sha (Our Cognitive Gardens, MIT License)", "builds": 71}};
+window.STUDIO = {"people": 36, "builds": 132, "withBuilds": 24, "gardenBuilds": 71, "themes": [["Environments", 24], ["Reflection", 18], ["Learning", 17], ["Attention", 14], ["Creativity", 13], ["Memory", 13], ["Social connection", 6]], "groups": [1, 2, 3, 4, 5, 6], "snapshot": {"source": "https://github.com/rainscyy/MyGarden4.0/blob/main/public/course-snapshot.json", "author": "Raine Sha (Our Cognitive Gardens, MIT License)", "builds": 71}};

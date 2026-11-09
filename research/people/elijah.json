@@ -1,0 +1,37 @@
+{
+  "id": "elijah",
+  "name": "Elijah",
+  "first": "Elijah",
+  "group": null,
+  "dept": "",
+  "site": "https://mitmedialab.github.io/agents2026-elijah/",
+  "sparse": true,
+  "weeks": [],
+  "now": "following along with the class this term",
+  "activities": [
+    "catching the weekly demos",
+    "thinking about agents",
+    "following the class discussions"
+  ],
+  "props": [
+    "laptop",
+    "mug"
+  ],
+  "colors": {
+    "primary": "#3f7f7a",
+    "secondary": "#d6ece8"
+  },
+  "vibe": "Following how the class builds and talks about agents this term.",
+  "lines": [
+    "Hi, I'm Elijah! I'm in the agents class this term.",
+    "My site just says 'Welcome Elijah' for now. Short and sweet.",
+    "It's fun seeing everyone's builds come together week by week.",
+    "I'm curious how agents can help people think, remember and create.",
+    "Nothing posted yet. Check back later!"
+  ],
+  "chatter": [
+    "oh, nice demo",
+    "hmm, good question",
+    "that's clever"
+  ]
+}

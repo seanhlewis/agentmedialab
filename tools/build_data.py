@@ -14,7 +14,8 @@ import json, pathlib, sys, collections, re
 sys.stdout.reconfigure(encoding="utf-8")
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 ORDER = ("meiri jad yuxiang stacey mateo juan matti yanning sandra leticia hyung roma maya "
-         "david egemen raine sean brooke manasi ruipeng olivia lilith ray yue eitan om yufeng lichun").split()
+         "david egemen raine sean brooke manasi ruipeng olivia lilith ray yue eitan om yufeng lichun "
+         "fatak jack quincy cate elijah eugene river yui").split()
 SNAP_ID = {"juan": "juan-ruben", "lichun": "li-chun"}  # our id -> Raine's snapshot id
 PROPS = set("laptop headphones sketchbook robot mug plant books tablet synth map camera solder clay phone "
             "sticky_notes globe newspaper yarn".split())
